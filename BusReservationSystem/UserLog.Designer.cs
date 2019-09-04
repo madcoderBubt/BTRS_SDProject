@@ -34,23 +34,23 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.grpRegister = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.cmbRegister_Role = new System.Windows.Forms.ComboBox();
+            this.cmbRegister_Counter = new System.Windows.Forms.ComboBox();
+            this.txtRegister_Password = new System.Windows.Forms.TextBox();
+            this.txtRegister_Phone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtRegister_Name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.grpLogin = new System.Windows.Forms.GroupBox();
             this.btnAbout = new System.Windows.Forms.PictureBox();
             this.btnLinkR = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtLog_Passsword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLog_Phone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -91,7 +91,7 @@
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -108,7 +108,7 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Red;
@@ -132,15 +132,15 @@
             // 
             // grpRegister
             // 
-            this.grpRegister.Controls.Add(this.button2);
-            this.grpRegister.Controls.Add(this.comboBox2);
-            this.grpRegister.Controls.Add(this.comboBox1);
-            this.grpRegister.Controls.Add(this.textBox5);
-            this.grpRegister.Controls.Add(this.textBox4);
+            this.grpRegister.Controls.Add(this.btnRegister);
+            this.grpRegister.Controls.Add(this.cmbRegister_Role);
+            this.grpRegister.Controls.Add(this.cmbRegister_Counter);
+            this.grpRegister.Controls.Add(this.txtRegister_Password);
+            this.grpRegister.Controls.Add(this.txtRegister_Phone);
             this.grpRegister.Controls.Add(this.label7);
             this.grpRegister.Controls.Add(this.label6);
             this.grpRegister.Controls.Add(this.label5);
-            this.grpRegister.Controls.Add(this.textBox3);
+            this.grpRegister.Controls.Add(this.txtRegister_Name);
             this.grpRegister.Controls.Add(this.label4);
             this.grpRegister.Location = new System.Drawing.Point(317, 24);
             this.grpRegister.Name = "grpRegister";
@@ -149,51 +149,53 @@
             this.grpRegister.TabStop = false;
             this.grpRegister.Text = "Register";
             // 
-            // button2
+            // btnRegister
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(20, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(283, 40);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Register Now";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(20, 125);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(283, 40);
+            this.btnRegister.TabIndex = 6;
+            this.btnRegister.Text = "Register Now";
+            this.btnRegister.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cmbRegister_Role
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbRegister_Role.FormattingEnabled = true;
+            this.cmbRegister_Role.Items.AddRange(new object[] {
             "Designation"});
-            this.comboBox2.Location = new System.Drawing.Point(200, 100);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(103, 21);
-            this.comboBox2.TabIndex = 5;
+            this.cmbRegister_Role.Location = new System.Drawing.Point(200, 100);
+            this.cmbRegister_Role.Name = "cmbRegister_Role";
+            this.cmbRegister_Role.Size = new System.Drawing.Size(103, 21);
+            this.cmbRegister_Role.TabIndex = 5;
+            this.cmbRegister_Role.Text = "Role";
             // 
-            // comboBox1
+            // cmbRegister_Counter
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbRegister_Counter.FormattingEnabled = true;
+            this.cmbRegister_Counter.Items.AddRange(new object[] {
             "Counter"});
-            this.comboBox1.Location = new System.Drawing.Point(77, 100);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(117, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cmbRegister_Counter.Location = new System.Drawing.Point(77, 100);
+            this.cmbRegister_Counter.Name = "cmbRegister_Counter";
+            this.cmbRegister_Counter.Size = new System.Drawing.Size(117, 21);
+            this.cmbRegister_Counter.TabIndex = 4;
+            this.cmbRegister_Counter.Text = "Counter";
             // 
-            // textBox5
+            // txtRegister_Password
             // 
-            this.textBox5.Location = new System.Drawing.Point(77, 76);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(226, 20);
-            this.textBox5.TabIndex = 3;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtRegister_Password.Location = new System.Drawing.Point(77, 76);
+            this.txtRegister_Password.Name = "txtRegister_Password";
+            this.txtRegister_Password.Size = new System.Drawing.Size(226, 20);
+            this.txtRegister_Password.TabIndex = 3;
+            this.txtRegister_Password.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox4
+            // txtRegister_Phone
             // 
-            this.textBox4.Location = new System.Drawing.Point(77, 51);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(226, 20);
-            this.textBox4.TabIndex = 2;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtRegister_Phone.Location = new System.Drawing.Point(77, 51);
+            this.txtRegister_Phone.Name = "txtRegister_Phone";
+            this.txtRegister_Phone.Size = new System.Drawing.Size(226, 20);
+            this.txtRegister_Phone.TabIndex = 2;
+            this.txtRegister_Phone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label7
             // 
@@ -222,13 +224,13 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Phone No.";
             // 
-            // textBox3
+            // txtRegister_Name
             // 
-            this.textBox3.Location = new System.Drawing.Point(77, 28);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(226, 20);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtRegister_Name.Location = new System.Drawing.Point(77, 28);
+            this.txtRegister_Name.Name = "txtRegister_Name";
+            this.txtRegister_Name.Size = new System.Drawing.Size(226, 20);
+            this.txtRegister_Name.TabIndex = 1;
+            this.txtRegister_Name.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
@@ -243,10 +245,10 @@
             // 
             this.grpLogin.Controls.Add(this.btnAbout);
             this.grpLogin.Controls.Add(this.btnLinkR);
-            this.grpLogin.Controls.Add(this.button1);
-            this.grpLogin.Controls.Add(this.textBox2);
+            this.grpLogin.Controls.Add(this.btnLogin);
+            this.grpLogin.Controls.Add(this.txtLog_Passsword);
             this.grpLogin.Controls.Add(this.label2);
-            this.grpLogin.Controls.Add(this.textBox1);
+            this.grpLogin.Controls.Add(this.txtLog_Phone);
             this.grpLogin.Controls.Add(this.label1);
             this.grpLogin.Location = new System.Drawing.Point(12, 24);
             this.grpLogin.Name = "grpLogin";
@@ -277,25 +279,25 @@
             this.btnLinkR.Text = "Register Now";
             this.btnLinkR.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkRegister_Click);
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(17, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(242, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "LogIn";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(17, 125);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(242, 40);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "LogIn";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txtLog_Passsword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(17, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 22);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtLog_Passsword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLog_Passsword.Location = new System.Drawing.Point(17, 97);
+            this.txtLog_Passsword.Name = "txtLog_Passsword";
+            this.txtLog_Passsword.Size = new System.Drawing.Size(242, 22);
+            this.txtLog_Passsword.TabIndex = 2;
+            this.txtLog_Passsword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -307,13 +309,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Password";
             // 
-            // textBox1
+            // txtLog_Phone
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(17, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtLog_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLog_Phone.Location = new System.Drawing.Point(17, 53);
+            this.txtLog_Phone.Name = "txtLog_Phone";
+            this.txtLog_Phone.Size = new System.Drawing.Size(242, 22);
+            this.txtLog_Phone.TabIndex = 1;
             // 
             // label1
             // 
@@ -355,24 +357,24 @@
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.GroupBox grpLogin;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLog_Phone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLog_Passsword;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.LinkLabel btnLinkR;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox grpRegister;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtRegister_Name;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtRegister_Password;
+        private System.Windows.Forms.TextBox txtRegister_Phone;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbRegister_Counter;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cmbRegister_Role;
+        private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.PictureBox btnAbout;
     }
 }
