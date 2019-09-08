@@ -23,12 +23,14 @@ namespace BusReservationSystem
 
         }
 
+        //Open About us dialog
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             About about = new About();
             about.ShowDialog(this);
         }
 
+        //open login window while closing dashboard
         private void Dashboard_FormClosed(object sender, FormClosedEventArgs e)
         {
             _userLog.Show();

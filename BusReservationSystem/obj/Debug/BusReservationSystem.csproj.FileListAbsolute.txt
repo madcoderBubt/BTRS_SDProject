@@ -10,3 +10,4 @@ C:\Users\Mad Coder\Documents\Visual Studio 2017\Projects\BusReservationSystem\Bu
 C:\Users\Mad Coder\Documents\Visual Studio 2017\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.Register.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2017\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.About.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2017\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.Dashboard.resources
+C:\Users\Mad Coder\Documents\Visual Studio 2017\Projects\BusReservationSystem\BusReservationSystem\bin\Debug\BusReservationSystem.exe.config

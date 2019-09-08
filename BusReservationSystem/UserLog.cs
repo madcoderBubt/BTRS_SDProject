@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusReservationSystem.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,20 +16,29 @@ namespace BusReservationSystem
         public UserLog()
         {
             InitializeComponent();
+            //Initial size of window
             this.Width = 317;
             this.Height = 271;
+            foreach (Control c in grpRegister.Controls)
+            {
+                c.TabStop = false;
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //Close Application
             Application.Exit();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
+            //Minimize Window
             this.WindowState = FormWindowState.Minimized;
         }
 
+        //Open Register Section
+        //Window size control
         private void LinkRegister_Click(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (this.Width == 317)
@@ -54,13 +64,16 @@ namespace BusReservationSystem
 
         }
 
+        //Move window using mouse
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
+            //get mouse click location
             _mousePoint = e.Location;
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
+            //move window with mouse
             if (e.Button == MouseButtons.Left)
             {
                 int dx = e.Location.X - _mousePoint.X;
@@ -69,17 +82,22 @@ namespace BusReservationSystem
             }
         }
 
+        //Open About us dialog
         private void btnAbout_Click(object sender, EventArgs e)
         {
             About about = new About();
             about.ShowDialog(this);
         }
 
+        //LogIn Button Click
         private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard(this);
-            dashboard.Show();
-            this.Hide();
+            //Dashboard dashboard = new Dashboard(this);
+            //dashboard.Show();
+            //this.Hide();
+
+            Account a = new Account();
+            a.Register();
         }
     }
 }
