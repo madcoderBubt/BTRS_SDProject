@@ -158,6 +158,7 @@
             this.btnRegister.TabIndex = 6;
             this.btnRegister.Text = "Register Now";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // cmbRegister_Role
             // 
@@ -338,6 +339,7 @@
             this.Name = "UserLog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserLog";
+            this.Load += new System.EventHandler(this.UserLog_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

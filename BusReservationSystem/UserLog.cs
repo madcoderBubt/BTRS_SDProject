@@ -92,12 +92,51 @@ namespace BusReservationSystem
         //LogIn Button Click
         private void button1_Click(object sender, EventArgs e)
         {
-            //Dashboard dashboard = new Dashboard(this);
-            //dashboard.Show();
-            //this.Hide();
-
             Account a = new Account();
-            a.Register();
+            bool b = a.Login(txtLog_Phone.Text, txtLog_Passsword.Text);
+            if (b)
+            {
+                Dashboard dashboard = new Dashboard(this);
+                dashboard.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Login Failed!");
+            }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Account a = new Account();
+            a.Full_name = txtRegister_Name.Text;
+            a.Password = txtRegister_Password.Text;
+            a.Phone_no = txtRegister_Phone.Text;
+            a.Role = Int32.Parse(cmbRegister_Role.SelectedValue.ToString());
+            a.Counter = cmbRegister_Counter.SelectedValue.ToString();
+
+            if (a.Register())
+            {
+                MessageBox.Show("Registered Successful!");
+            }
+            else
+            {
+                MessageBox.Show("Registered Unsucced!");
+            }
+        }
+
+        private void UserLog_Load(object sender, EventArgs e)
+        {
+            Account account = new Account();
+            DataTable roles = account.GetRoles();
+            cmbRegister_Role.DataSource = roles;
+            cmbRegister_Role.DisplayMember = "name";
+            cmbRegister_Role.ValueMember = "id";
+
+            DataTable counters = account.GetConters();
+            cmbRegister_Counter.DataSource = counters;
+            cmbRegister_Counter.DisplayMember = "name";
+            cmbRegister_Counter.ValueMember = "name";
         }
     }
 }
