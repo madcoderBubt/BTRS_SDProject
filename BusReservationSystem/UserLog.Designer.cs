@@ -188,6 +188,7 @@
             this.txtRegister_Password.Name = "txtRegister_Password";
             this.txtRegister_Password.Size = new System.Drawing.Size(226, 20);
             this.txtRegister_Password.TabIndex = 3;
+            this.txtRegister_Password.UseSystemPasswordChar = true;
             this.txtRegister_Password.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtRegister_Phone
@@ -298,6 +299,7 @@
             this.txtLog_Passsword.Name = "txtLog_Passsword";
             this.txtLog_Passsword.Size = new System.Drawing.Size(242, 22);
             this.txtLog_Passsword.TabIndex = 2;
+            this.txtLog_Passsword.Text = "12345";
             this.txtLog_Passsword.UseSystemPasswordChar = true;
             // 
             // label2
@@ -317,6 +319,7 @@
             this.txtLog_Phone.Name = "txtLog_Phone";
             this.txtLog_Phone.Size = new System.Drawing.Size(242, 22);
             this.txtLog_Phone.TabIndex = 1;
+            this.txtLog_Phone.Text = "01720000830";
             // 
             // label1
             // 

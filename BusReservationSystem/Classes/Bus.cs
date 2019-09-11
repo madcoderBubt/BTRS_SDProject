@@ -15,10 +15,11 @@ namespace BusReservationSystem.Classes
 
         public DataTable GetBuses()
         {
+            //Get List of Busses from Database & return as DataTable 
             DataTable dataTable = new DataTable();
             using (SqlConnection con = new SqlConnection(conStr))
             {
-                string sql = "SELECT * FROM [Bus]";
+                string sql = "select [Bus].*, [Bus_Counter].time from [Bus] full outer join [Bus_Counter] on [Bus].[no] = [Bus_Counter].[bus_no]";
                 SqlCommand cmd = new SqlCommand(sql,con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dataTable);

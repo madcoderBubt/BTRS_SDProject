@@ -16,7 +16,7 @@ namespace BusReservationSystem
         public Dashboard(UserLog userLog)
         {
             InitializeComponent();
-            _userLog = userLog;
+            _userLog = userLog; // for avoiding unexpected system running.
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -33,15 +33,21 @@ namespace BusReservationSystem
         //open login window while closing dashboard
         private void Dashboard_FormClosed(object sender, FormClosedEventArgs e)
         {
+            LogInfo.CleanSession();
             _userLog.Show();
         }
 
+        //Set default content while loading
         private void Dashboard_Load(object sender, EventArgs e)
         {
             Bus bus = new Bus();
             dataGridView1.DataSource = bus.GetBuses();
             lblCurrentUser.Text = LogInfo.user_name +
                 " ( " + LogInfo.user_counter+ " )";
+            if (LogInfo.user_role != 1)
+                adminToolStripMenuItem.Enabled = false;
+            else
+                adminToolStripMenuItem.Enabled = true;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,10 +57,7 @@ namespace BusReservationSystem
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LogInfo.user_name = null;
-            LogInfo.user_id = -1;
-            LogInfo.user_role = -1;
-            LogInfo.user_counter = null;
+            //LogInfo.CleanSession();
             this.Close();
         }
 
@@ -66,6 +69,7 @@ namespace BusReservationSystem
 
         private void contactUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Opens HyperLink on default browser.
             System.Diagnostics.Process.Start("https://www.linkedin.com/in/madcoder-bubt/");
         }
 
@@ -74,5 +78,11 @@ namespace BusReservationSystem
             UserForm currentUser = new UserForm();
             currentUser.ShowDialog(this);
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //searching here
+        }
+        
     }
 }
