@@ -21,7 +21,8 @@ namespace BusReservationSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            PessengerListForm pessengerList = new PessengerListForm();
+            pessengerList.ShowDialog(this);
         }
 
         //Open About us dialog
@@ -83,6 +84,5 @@ namespace BusReservationSystem
         {
             //searching here
         }
-        
     }
 }

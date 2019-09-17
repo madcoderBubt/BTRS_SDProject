@@ -32,6 +32,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -51,6 +69,18 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssignBusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignBusForm.Designer.cs">
+      <DependentUpon>AssignBusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignRouteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignRouteForm.Designer.cs">
+      <DependentUpon>AssignRouteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Classes\Bus.cs" />
     <Compile Include="Classes\LogInfo.cs" />
@@ -61,6 +91,18 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PessengerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PessengerListForm.Designer.cs">
+      <DependentUpon>PessengerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintTicketForm.Designer.cs">
+      <DependentUpon>PrintTicketForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.cs">
@@ -68,6 +110,12 @@
     </Compile>
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketBookingForm.Designer.cs">
+      <DependentUpon>TicketBookingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
@@ -87,6 +135,12 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PessengerListForm.resx">
+      <DependentUpon>PessengerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintTicketForm.resx">
+      <DependentUpon>PrintTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -100,6 +154,10 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportTicket.rdlc" />
+    <EmbeddedResource Include="TicketBookingForm.resx">
+      <DependentUpon>TicketBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +165,7 @@
       <DependentUpon>UserLog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -134,5 +193,9 @@
     <Content Include="Resources\sudha.jpg" />
     <None Include="Resources\MC-logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
