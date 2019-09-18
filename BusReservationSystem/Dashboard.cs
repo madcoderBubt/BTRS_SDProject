@@ -21,6 +21,7 @@ namespace BusReservationSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Pessanger List Button Click
             PessengerListForm pessengerList = new PessengerListForm();
             pessengerList.ShowDialog(this);
         }
@@ -42,7 +43,15 @@ namespace BusReservationSystem
         private void Dashboard_Load(object sender, EventArgs e)
         {
             Bus bus = new Bus();
+            //Initialize DataGridView
             dataGridView1.DataSource = bus.GetBuses();
+            dataGridView1.Sort(dataGridView1.Columns["date"], ListSortDirection.Ascending);
+            //Initialize Bus Type in search combo box
+            cmbBusType.DataSource = bus.GetBusType();
+            cmbBusType.ValueMember = "id";
+            cmbBusType.DisplayMember = "type";
+            cmbBusType.Text = "Bus Type";
+            //Log status
             lblCurrentUser.Text = LogInfo.user_name +
                 " ( " + LogInfo.user_counter+ " )";
             if (LogInfo.user_role != 1)
@@ -51,6 +60,7 @@ namespace BusReservationSystem
                 adminToolStripMenuItem.Enabled = true;
         }
 
+        //Exit Application
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -64,25 +74,42 @@ namespace BusReservationSystem
 
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Menu: Help > About Us
             About about = new About();
             about.ShowDialog(this);
         }
 
         private void contactUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Menu: Help > Contact Us
             //Opens HyperLink on default browser.
             System.Diagnostics.Process.Start("https://www.linkedin.com/in/madcoder-bubt/");
         }
 
         private void userInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Menu: Log > User Info
             UserForm currentUser = new UserForm();
             currentUser.ShowDialog(this);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            //searching here
+            //Search: search Button
+            Bus bus = new Bus();
+            DataTable data = new DataTable();
+            //MessageBox.Show(dtpBusTime.Value.ToShortDateString());
+            data = bus.GetBuses(txtCounter.Text, Int32.Parse(cmbBusType.SelectedValue.ToString()), dtpBusTime.Value);
+            dataGridView1.DataSource = data;
+            dataGridView1.Sort(dataGridView1.Columns["date"], ListSortDirection.Ascending);
+        }
+
+        private void btnResetClick(object sender, EventArgs e)
+        {
+            //Search: Reset Button
+            Bus bus = new Bus();
+            dataGridView1.DataSource = bus.GetBuses();
+            dataGridView1.Sort(dataGridView1.Columns["date"], ListSortDirection.Ascending);
         }
     }
 }
