@@ -227,15 +227,20 @@
             this.btnPrintTicket.TabIndex = 0;
             this.btnPrintTicket.Text = "Print Ticket";
             this.btnPrintTicket.UseVisualStyleBackColor = true;
+            this.btnPrintTicket.Click += new System.EventHandler(this.btnPrintTicket_Click);
             // 
             // btnCheckRoute
             // 
+            this.btnCheckRoute.BackColor = System.Drawing.Color.Crimson;
+            this.btnCheckRoute.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnCheckRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.btnCheckRoute.ForeColor = System.Drawing.Color.White;
             this.btnCheckRoute.Location = new System.Drawing.Point(3, 57);
             this.btnCheckRoute.Name = "btnCheckRoute";
             this.btnCheckRoute.Size = new System.Drawing.Size(205, 45);
             this.btnCheckRoute.TabIndex = 0;
             this.btnCheckRoute.Text = "Cancel Ticket";
-            this.btnCheckRoute.UseVisualStyleBackColor = true;
+            this.btnCheckRoute.UseVisualStyleBackColor = false;
             // 
             // btnBookTicket
             // 
@@ -245,6 +250,7 @@
             this.btnBookTicket.TabIndex = 0;
             this.btnBookTicket.Text = "Book Ticket";
             this.btnBookTicket.UseVisualStyleBackColor = true;
+            this.btnBookTicket.Click += new System.EventHandler(this.btnBookTicket_Click);
             // 
             // panel3
             // 
@@ -277,11 +283,13 @@
             // lblCurrentUser
             // 
             this.lblCurrentUser.AutoSize = true;
-            this.lblCurrentUser.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentUser.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentUser.ForeColor = System.Drawing.Color.DarkCyan;
             this.lblCurrentUser.Location = new System.Drawing.Point(3, 6);
             this.lblCurrentUser.Name = "lblCurrentUser";
-            this.lblCurrentUser.Size = new System.Drawing.Size(0, 15);
+            this.lblCurrentUser.Size = new System.Drawing.Size(109, 15);
             this.lblCurrentUser.TabIndex = 1;
+            this.lblCurrentUser.Text = " Sudha (Magura-1)";
             // 
             // flowLayoutPanel1
             // 

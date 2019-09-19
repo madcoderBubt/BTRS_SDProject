@@ -37,10 +37,12 @@ namespace BusReservationSystem.Classes
             {
                 string sql = "select [Bus].*, [Bus_Counter].[date], [time] from [Bus] "
                     + "full outer join [Bus_Counter] on [Bus].[no] = [Bus_Counter].[bus_no] where [Bus_Counter].[counter_name] = @currentCounter "
-                    + "/*and [Bus].[no] like @busNo */ and [Bus].[type] = @busType and [Bus_Counter].[date] = @busDate";
+                    + "and [Bus].[type] = @busType and [Bus_Counter].[date] = @busDate "
+                    + "and [Bus].[no] = any( select [Bus_Counter].[bus_no] from [Bus_Counter] where counter_name like @counterName)";
+
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@currentCounter", LogInfo.user_counter);
-                cmd.Parameters.AddWithValue("@busNo", destination);
+                cmd.Parameters.AddWithValue("@counterName", destination + "%");
                 cmd.Parameters.AddWithValue("@busType", busType);
                 cmd.Parameters.AddWithValue("@busDate", busDate.ToShortDateString());
                 //System.Windows.Forms.MessageBox.Show(busDate.ToShortDateString());

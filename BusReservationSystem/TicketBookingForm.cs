@@ -15,5 +15,10 @@ namespace BusReservationSystem
         {
             InitializeComponent();
         }
+
+        private void TicketBookingForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

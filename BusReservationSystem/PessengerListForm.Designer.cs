@@ -32,12 +32,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtBusNo = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txtBusNo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -58,9 +60,9 @@
             // 
             // txtBusNo
             // 
-            this.txtBusNo.Location = new System.Drawing.Point(12, 12);
+            this.txtBusNo.Location = new System.Drawing.Point(63, 12);
             this.txtBusNo.Name = "txtBusNo";
-            this.txtBusNo.Size = new System.Drawing.Size(200, 20);
+            this.txtBusNo.Size = new System.Drawing.Size(149, 20);
             this.txtBusNo.TabIndex = 0;
             // 
             // dataGridView1
@@ -71,6 +73,15 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(578, 241);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Bus No.";
             // 
             // PessengerListForm
             // 
@@ -95,5 +106,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtBusNo;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }

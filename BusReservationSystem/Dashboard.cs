@@ -111,5 +111,18 @@ namespace BusReservationSystem
             dataGridView1.DataSource = bus.GetBuses();
             dataGridView1.Sort(dataGridView1.Columns["date"], ListSortDirection.Ascending);
         }
+
+        private void btnBookTicket_Click(object sender, EventArgs e)
+        {
+            //Ticket Booking Form
+            TicketBookingForm tbf = new TicketBookingForm();
+            tbf.ShowDialog(this);
+        }
+
+        private void btnPrintTicket_Click(object sender, EventArgs e)
+        {
+            PrintTicketForm ptf = new PrintTicketForm();
+            ptf.ShowDialog(this);
+        }
     }
 }
