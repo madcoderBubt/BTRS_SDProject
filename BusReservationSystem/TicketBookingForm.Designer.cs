@@ -174,6 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(349, 264);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
@@ -190,7 +191,9 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(365, 303);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(365, 303);
             this.Name = "TicketBookingForm";
             this.Text = "TicketBookingForm";
             this.Load += new System.EventHandler(this.TicketBookingForm_Load);

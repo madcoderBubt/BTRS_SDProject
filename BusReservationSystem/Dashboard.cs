@@ -124,5 +124,10 @@ namespace BusReservationSystem
             PrintTicketForm ptf = new PrintTicketForm();
             ptf.ShowDialog(this);
         }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

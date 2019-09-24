@@ -147,13 +147,13 @@
             // asignBussToolStripMenuItem
             // 
             this.asignBussToolStripMenuItem.Name = "asignBussToolStripMenuItem";
-            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.asignBussToolStripMenuItem.Text = "Asign Buss";
             // 
             // asignRouteToolStripMenuItem
             // 
             this.asignRouteToolStripMenuItem.Name = "asignRouteToolStripMenuItem";
-            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.asignRouteToolStripMenuItem.Text = "Asign Route";
             // 
             // button1
@@ -191,10 +191,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.MC_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 261);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 291);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 108);
+            this.pictureBox1.Size = new System.Drawing.Size(213, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -269,6 +270,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(587, 399);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // panel1
             // 
@@ -287,9 +289,8 @@
             this.lblCurrentUser.ForeColor = System.Drawing.Color.DarkCyan;
             this.lblCurrentUser.Location = new System.Drawing.Point(3, 6);
             this.lblCurrentUser.Name = "lblCurrentUser";
-            this.lblCurrentUser.Size = new System.Drawing.Size(109, 15);
+            this.lblCurrentUser.Size = new System.Drawing.Size(0, 15);
             this.lblCurrentUser.TabIndex = 1;
-            this.lblCurrentUser.Text = " Sudha (Magura-1)";
             // 
             // flowLayoutPanel1
             // 
