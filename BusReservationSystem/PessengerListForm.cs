@@ -11,9 +11,11 @@ namespace BusReservationSystem
 {
     public partial class PessengerListForm : Form
     {
-        public PessengerListForm()
+        string _busNo;
+        public PessengerListForm(string busNo)
         {
             InitializeComponent();
+            _busNo = busNo;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,6 +32,8 @@ namespace BusReservationSystem
             DataTable data = new DataTable();
             data = bus.GetPessanger(txtBusNo.Text);
             dataGridView1.DataSource = data;
+            txtBusNo.Text = _busNo;
+            button1.PerformClick();
         }
     }
 }

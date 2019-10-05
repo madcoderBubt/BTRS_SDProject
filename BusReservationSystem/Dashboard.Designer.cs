@@ -147,13 +147,13 @@
             // asignBussToolStripMenuItem
             // 
             this.asignBussToolStripMenuItem.Name = "asignBussToolStripMenuItem";
-            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.asignBussToolStripMenuItem.Text = "Asign Buss";
             // 
             // asignRouteToolStripMenuItem
             // 
             this.asignRouteToolStripMenuItem.Name = "asignRouteToolStripMenuItem";
-            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.asignRouteToolStripMenuItem.Text = "Asign Route";
             // 
             // button1
@@ -270,7 +270,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(587, 399);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // panel1
             // 

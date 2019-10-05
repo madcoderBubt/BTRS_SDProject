@@ -110,5 +110,20 @@ namespace BusReservationSystem.Classes
             }
             return dt;
         }
+
+        public DataTable GetConters(string search)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                string sql = "SELECT * FROM [counter] where [counter].[name] like '@searchText%'";
+                SqlCommand command = new SqlCommand(sql, con);
+                command.Parameters.AddWithValue("@searchText", search);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                dataAdapter.Fill(dt);
+            }
+            return dt;
+        }
+
     }
 }

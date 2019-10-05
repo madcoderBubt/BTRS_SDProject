@@ -18,10 +18,10 @@ namespace BusReservationSystem.Classes
         //Clean Data if logout occured.
         public static void CleanSession()
         {
-            LogInfo.user_name = null;
-            LogInfo.user_id = -1;
-            LogInfo.user_role = -1;
-            LogInfo.user_counter = null;
+            user_name = null;
+            user_id = -1;
+            user_role = -1;
+            user_counter = null;
         }
     }
 }

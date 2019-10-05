@@ -25,6 +25,10 @@ namespace BusReservationSystem
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

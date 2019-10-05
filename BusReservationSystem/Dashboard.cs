@@ -22,7 +22,7 @@ namespace BusReservationSystem
         private void button2_Click(object sender, EventArgs e)
         {
             //Pessanger List Button Click
-            PessengerListForm pessengerList = new PessengerListForm();
+            PessengerListForm pessengerList = new PessengerListForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
             pessengerList.ShowDialog(this);
         }
 
@@ -114,8 +114,10 @@ namespace BusReservationSystem
 
         private void btnBookTicket_Click(object sender, EventArgs e)
         {
+            string s = dataGridView1.CurrentRow.Cells["no"].Value.ToString();
+            string a = dataGridView1.CurrentRow.Cells["avail_seat"].Value.ToString();
             //Ticket Booking Form
-            TicketBookingForm tbf = new TicketBookingForm();
+            TicketBookingForm tbf = new TicketBookingForm(s,a,this);
             tbf.ShowDialog(this);
         }
 
@@ -125,9 +127,9 @@ namespace BusReservationSystem
             ptf.ShowDialog(this);
         }
 
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void RefreshGrid()
         {
-
+            button2.PerformClick();
         }
     }
 }

@@ -28,49 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtTicketNo = new System.Windows.Forms.TextBox();
+            this.txtBusNo = new System.Windows.Forms.TextBox();
+            this.cmbDestination = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPhoneNo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSeatLen = new System.Windows.Forms.TextBox();
+            this.txtFrom = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnBookNow = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblAvailSeat = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtTicketNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "ticket no";
+            this.txtTicketNo.Location = new System.Drawing.Point(13, 71);
+            this.txtTicketNo.Name = "txtTicketNo";
+            this.txtTicketNo.ReadOnly = true;
+            this.txtTicketNo.Size = new System.Drawing.Size(100, 20);
+            this.txtTicketNo.TabIndex = 0;
+            this.txtTicketNo.TabStop = false;
+            this.txtTicketNo.Text = "ticket no";
             // 
-            // textBox2
+            // txtBusNo
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(99, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "bus no";
+            this.txtBusNo.Location = new System.Drawing.Point(119, 71);
+            this.txtBusNo.Name = "txtBusNo";
+            this.txtBusNo.ReadOnly = true;
+            this.txtBusNo.Size = new System.Drawing.Size(99, 20);
+            this.txtBusNo.TabIndex = 0;
+            this.txtBusNo.TabStop = false;
+            this.txtBusNo.Text = "bus no";
             // 
-            // comboBox1
+            // cmbDestination
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(119, 184);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 21);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "destination";
+            this.cmbDestination.AllowDrop = true;
+            this.cmbDestination.FormattingEnabled = true;
+            this.cmbDestination.ItemHeight = 13;
+            this.cmbDestination.Location = new System.Drawing.Point(119, 184);
+            this.cmbDestination.MaxDropDownItems = 4;
+            this.cmbDestination.Name = "cmbDestination";
+            this.cmbDestination.Size = new System.Drawing.Size(213, 21);
+            this.cmbDestination.TabIndex = 1;
             // 
             // label1
             // 
@@ -81,13 +86,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Full Name";
             // 
-            // textBox3
+            // txtFullName
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 20);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Mad coder";
+            this.txtFullName.Location = new System.Drawing.Point(119, 106);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(213, 20);
+            this.txtFullName.TabIndex = 3;
+            this.txtFullName.Text = "Mad coder";
             // 
             // label2
             // 
@@ -98,13 +103,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Phone Number";
             // 
-            // textBox4
+            // txtPhoneNo
             // 
-            this.textBox4.Location = new System.Drawing.Point(119, 132);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(213, 20);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "+8801632740075";
+            this.txtPhoneNo.Location = new System.Drawing.Point(119, 132);
+            this.txtPhoneNo.Name = "txtPhoneNo";
+            this.txtPhoneNo.Size = new System.Drawing.Size(213, 20);
+            this.txtPhoneNo.TabIndex = 3;
+            this.txtPhoneNo.Text = "+8801632740075";
             // 
             // label3
             // 
@@ -115,22 +120,23 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Total Seat";
             // 
-            // textBox5
+            // txtSeatLen
             // 
-            this.textBox5.Location = new System.Drawing.Point(119, 158);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(213, 20);
-            this.textBox5.TabIndex = 3;
-            this.textBox5.Text = "0";
+            this.txtSeatLen.Location = new System.Drawing.Point(119, 158);
+            this.txtSeatLen.Name = "txtSeatLen";
+            this.txtSeatLen.Size = new System.Drawing.Size(99, 20);
+            this.txtSeatLen.TabIndex = 3;
+            this.txtSeatLen.Text = "0";
             // 
-            // textBox6
+            // txtFrom
             // 
-            this.textBox6.Location = new System.Drawing.Point(224, 71);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(108, 20);
-            this.textBox6.TabIndex = 4;
-            this.textBox6.Text = "from";
+            this.txtFrom.Location = new System.Drawing.Point(224, 71);
+            this.txtFrom.Name = "txtFrom";
+            this.txtFrom.ReadOnly = true;
+            this.txtFrom.Size = new System.Drawing.Size(108, 20);
+            this.txtFrom.TabIndex = 4;
+            this.txtFrom.TabStop = false;
+            this.txtFrom.Text = "from";
             // 
             // label4
             // 
@@ -141,34 +147,43 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Destination";
             // 
-            // button1
+            // btnCancel
             // 
-            this.button1.Location = new System.Drawing.Point(13, 223);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(13, 223);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnBookNow
             // 
-            this.button2.Location = new System.Drawing.Point(119, 223);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 28);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Book Now";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBookNow.Location = new System.Drawing.Point(119, 223);
+            this.btnBookNow.Name = "btnBookNow";
+            this.btnBookNow.Size = new System.Drawing.Size(213, 28);
+            this.btnBookNow.TabIndex = 5;
+            this.btnBookNow.Text = "Book Now";
+            this.btnBookNow.UseVisualStyleBackColor = true;
+            this.btnBookNow.Click += new System.EventHandler(this.BtnBookNow_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.OrangeRed;
+            this.pictureBox1.BackColor = System.Drawing.Color.CadetBlue;
             this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.MC_logo;
             this.pictureBox1.Location = new System.Drawing.Point(14, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(317, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // lblAvailSeat
+            // 
+            this.lblAvailSeat.AutoSize = true;
+            this.lblAvailSeat.Location = new System.Drawing.Point(222, 161);
+            this.lblAvailSeat.Name = "lblAvailSeat";
+            this.lblAvailSeat.Size = new System.Drawing.Size(0, 13);
+            this.lblAvailSeat.TabIndex = 7;
             // 
             // TicketBookingForm
             // 
@@ -176,26 +191,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(349, 264);
+            this.Controls.Add(this.lblAvailSeat);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.btnBookNow);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.txtFrom);
+            this.Controls.Add(this.txtSeatLen);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPhoneNo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbDestination);
+            this.Controls.Add(this.txtBusNo);
+            this.Controls.Add(this.txtTicketNo);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(365, 303);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(365, 303);
             this.Name = "TicketBookingForm";
             this.Text = "TicketBookingForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TicketBookingForm_FormClosing);
             this.Load += new System.EventHandler(this.TicketBookingForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -205,19 +222,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtTicketNo;
+        private System.Windows.Forms.TextBox txtBusNo;
+        private System.Windows.Forms.ComboBox cmbDestination;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPhoneNo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtSeatLen;
+        private System.Windows.Forms.TextBox txtFrom;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnBookNow;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblAvailSeat;
     }
 }
