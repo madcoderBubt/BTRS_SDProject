@@ -114,23 +114,38 @@ namespace BusReservationSystem.Classes
                     + p.seat_length + ", '"
                     + p.counter + "', "
                     + p.GetPrice() + " )";
-                    //+ "(@ticketNo, '@fullName', '@phoneNo', '@busNo', '@startLoc', '@endLoc', @seatLength, '@counter', @price)";
                 SqlCommand cmd = new SqlCommand(sql, sqlCon);
-                //cmd.Parameters.AddWithValue("@ticketNo", p.ticket_no);
-                //cmd.Parameters.AddWithValue("@fullName", p.full_name);
-                //cmd.Parameters.AddWithValue("@phoneNo", p.phone_no);
-                //cmd.Parameters.AddWithValue("@busNo", p.bus_no);
-                //cmd.Parameters.AddWithValue("@startLoc", p.start_loc);
-                //cmd.Parameters.AddWithValue("@endLoc", p.end_loc);
-                //cmd.Parameters.AddWithValue("@seatLength", p.seat_length);
-                //cmd.Parameters.AddWithValue("@counter", p.counter);                
-                //cmd.Parameters.AddWithValue("@price", p.GetPrice());
                 sqlCon.Open();
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     string sqlUpdate = "Update [Bus] set [avail_seat] = " 
                         + (GetAvailSeat(p.bus_no) - p.seat_length) 
                         + "where [no] = '" + p.bus_no+"'";
+                    SqlCommand cmd2 = new SqlCommand(sqlUpdate, sqlCon);
+                    cmd2.ExecuteNonQuery();
+                    b = true;
+                }
+                else
+                    b = false;
+            }
+            return b;
+        }
+
+        public bool DeletePassenger(Passenger p)
+        {
+            bool b;
+            using (SqlConnection sqlCon = new SqlConnection(conStr))
+            {
+                string sql = "Delete from [Passaneger] where [bus_no] = @busNo and [ticket_no] = @ticketNo and [counter] = @counter";
+                SqlCommand cmd = new SqlCommand(sql, sqlCon);
+                cmd.Parameters.AddWithValue("", p.bus_no);
+                cmd.Parameters.AddWithValue("", p.counter);
+                cmd.Parameters.AddWithValue("", p.ticket_no);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    string sqlUpdate = "Update [Bus] set [avail_seat] = "
+                        + (GetAvailSeat(p.bus_no) + p.seat_length)
+                        + "where [no] = '" + p.bus_no + "'";
                     SqlCommand cmd2 = new SqlCommand(sqlUpdate, sqlCon);
                     cmd2.ExecuteNonQuery();
                     b = true;

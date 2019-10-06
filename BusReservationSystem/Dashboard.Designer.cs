@@ -46,7 +46,7 @@
             this.btnPessangerList = new System.Windows.Forms.Button();
             this.btnFindBus = new System.Windows.Forms.Button();
             this.btnPrintTicket = new System.Windows.Forms.Button();
-            this.btnCheckRoute = new System.Windows.Forms.Button();
+            this.btnCancelTicket = new System.Windows.Forms.Button();
             this.btnBookTicket = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -147,13 +147,13 @@
             // asignBussToolStripMenuItem
             // 
             this.asignBussToolStripMenuItem.Name = "asignBussToolStripMenuItem";
-            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.asignBussToolStripMenuItem.Text = "Asign Buss";
             // 
             // asignRouteToolStripMenuItem
             // 
             this.asignRouteToolStripMenuItem.Name = "asignRouteToolStripMenuItem";
-            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.asignRouteToolStripMenuItem.Text = "Asign Route";
             // 
             // button1
@@ -180,7 +180,7 @@
             this.panel2.Controls.Add(this.btnPessangerList);
             this.panel2.Controls.Add(this.btnFindBus);
             this.panel2.Controls.Add(this.btnPrintTicket);
-            this.panel2.Controls.Add(this.btnCheckRoute);
+            this.panel2.Controls.Add(this.btnCancelTicket);
             this.panel2.Controls.Add(this.btnBookTicket);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 51);
@@ -219,6 +219,7 @@
             this.btnFindBus.TabIndex = 0;
             this.btnFindBus.Text = "Get Available Bus";
             this.btnFindBus.UseVisualStyleBackColor = true;
+            this.btnFindBus.Click += new System.EventHandler(this.BtnFindBus_Click);
             // 
             // btnPrintTicket
             // 
@@ -230,18 +231,22 @@
             this.btnPrintTicket.UseVisualStyleBackColor = true;
             this.btnPrintTicket.Click += new System.EventHandler(this.btnPrintTicket_Click);
             // 
-            // btnCheckRoute
+            // btnCancelTicket
             // 
-            this.btnCheckRoute.BackColor = System.Drawing.Color.Crimson;
-            this.btnCheckRoute.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnCheckRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.btnCheckRoute.ForeColor = System.Drawing.Color.White;
-            this.btnCheckRoute.Location = new System.Drawing.Point(3, 57);
-            this.btnCheckRoute.Name = "btnCheckRoute";
-            this.btnCheckRoute.Size = new System.Drawing.Size(205, 45);
-            this.btnCheckRoute.TabIndex = 0;
-            this.btnCheckRoute.Text = "Cancel Ticket";
-            this.btnCheckRoute.UseVisualStyleBackColor = false;
+            this.btnCancelTicket.BackColor = System.Drawing.Color.Crimson;
+            this.btnCancelTicket.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
+            this.btnCancelTicket.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Crimson;
+            this.btnCancelTicket.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnCancelTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.btnCancelTicket.ForeColor = System.Drawing.Color.White;
+            this.btnCancelTicket.Location = new System.Drawing.Point(3, 57);
+            this.btnCancelTicket.Name = "btnCancelTicket";
+            this.btnCancelTicket.Size = new System.Drawing.Size(205, 45);
+            this.btnCancelTicket.TabIndex = 0;
+            this.btnCancelTicket.Text = "Cancel Ticket";
+            this.btnCancelTicket.UseVisualStyleBackColor = false;
+            this.btnCancelTicket.Click += new System.EventHandler(this.BtnCancelTicket_Click);
             // 
             // btnBookTicket
             // 
@@ -348,6 +353,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard - BTRS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Dashboard_FormClosed);
             this.Load += new System.EventHandler(this.Dashboard_Load);
@@ -384,7 +390,7 @@
         private System.Windows.Forms.Button btnPessangerList;
         private System.Windows.Forms.Button btnFindBus;
         private System.Windows.Forms.Button btnPrintTicket;
-        private System.Windows.Forms.Button btnCheckRoute;
+        private System.Windows.Forms.Button btnCancelTicket;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;

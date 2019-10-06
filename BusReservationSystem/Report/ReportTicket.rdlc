@@ -305,6 +305,10 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <RightBorder>
+                              <Color>DarkBlue</Color>
+                              <Style>Solid</Style>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -365,6 +369,10 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <RightBorder>
+                              <Color>DarkBlue</Color>
+                              <Style>Solid</Style>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -427,6 +435,10 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <RightBorder>
+                              <Color>DarkBlue</Color>
+                              <Style>Solid</Style>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -536,9 +548,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox33</rd:DefaultName>
                           <Top>1.73958in</Top>
-                          <Left>4.42708in</Left>
+                          <Left>4.38541in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.5in</Width>
+                          <Width>1.54167in</Width>
                           <ZIndex>15</ZIndex>
                           <Style>
                             <Border>
@@ -620,6 +632,48 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <Line Name="Line1">
+                          <Top>0.71875in</Top>
+                          <Left>0.15056in</Left>
+                          <Height>0in</Height>
+                          <Width>2.96054in</Width>
+                          <ZIndex>18</ZIndex>
+                          <Style>
+                            <Border>
+                              <Color>DarkBlue</Color>
+                              <Style>Dashed</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                          </Style>
+                        </Line>
+                        <Line Name="Line2">
+                          <Top>1.08333in</Top>
+                          <Left>0.15056in</Left>
+                          <Height>0in</Height>
+                          <Width>2.96054in</Width>
+                          <ZIndex>19</ZIndex>
+                          <Style>
+                            <Border>
+                              <Color>DarkBlue</Color>
+                              <Style>Dashed</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                          </Style>
+                        </Line>
+                        <Line Name="Line3">
+                          <Top>1.41667in</Top>
+                          <Left>0.16098in</Left>
+                          <Height>0in</Height>
+                          <Width>2.95013in</Width>
+                          <ZIndex>20</ZIndex>
+                          <Style>
+                            <Border>
+                              <Color>DarkBlue</Color>
+                              <Style>Dashed</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                          </Style>
+                        </Line>
                       </ReportItems>
                       <KeepTogether>true</KeepTogether>
                       <Style>
@@ -630,7 +684,7 @@
                         <RightBorder>
                           <Color>DimGray</Color>
                           <Style>Dashed</Style>
-                          <Width>2pt</Width>
+                          <Width>3pt</Width>
                         </RightBorder>
                       </Style>
                     </Rectangle>

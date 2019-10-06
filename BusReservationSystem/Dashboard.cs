@@ -131,5 +131,15 @@ namespace BusReservationSystem
         {
             button2.PerformClick();
         }
+
+        private void BtnCancelTicket_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnFindBus_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
