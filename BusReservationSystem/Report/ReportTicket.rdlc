@@ -22,7 +22,7 @@
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.04042in</Top>
         <Left>0.02527in</Left>
-        <Height>0.89583in</Height>
+        <Height>0.71875in</Height>
         <Width>5.12847in</Width>
         <Style>
           <Border>
@@ -57,7 +57,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Ticket No:</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -70,8 +72,11 @@
                           <Width>0.88542in</Width>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>Plum</Color>
+                              <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Plum</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -101,8 +106,10 @@
                           <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>Plum</Color>
+                              <Style>Solid</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -117,7 +124,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Bus No</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -131,8 +140,11 @@
                           <ZIndex>2</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>Plum</Color>
+                              <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Plum</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -161,8 +173,10 @@
                           <ZIndex>3</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>Plum</Color>
+                              <Style>Solid</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -193,7 +207,8 @@
                           <ZIndex>4</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>DarkGreen</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>DarkGreen</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -226,7 +241,8 @@
                           <ZIndex>5</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>DarkOliveGreen</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>DarkOliveGreen</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -441,7 +457,8 @@
                           <ZIndex>12</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>Brown</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Brown</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -491,7 +508,8 @@
                           <ZIndex>14</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Color>Brown</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -573,7 +591,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Bangladesh University of Bussiness &amp; Technology</Value>
+                                  <Value>Bangladesh University of Business &amp; Technology</Value>
                                   <Style>
                                     <FontFamily>Comic Sans MS</FontFamily>
                                     <Color>Aqua</Color>
@@ -606,12 +624,16 @@
                       <KeepTogether>true</KeepTogether>
                       <Style>
                         <Border>
-                          <Color>Red</Color>
+                          <Color>Brown</Color>
                           <Style>Double</Style>
                         </Border>
+                        <RightBorder>
+                          <Color>DimGray</Color>
+                          <Style>Dashed</Style>
+                          <Width>2pt</Width>
+                        </RightBorder>
                       </Style>
                     </Rectangle>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -631,7 +653,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>PassengerList</DataSetName>
-        <Top>1.13417in</Top>
+        <Top>0.88417in</Top>
         <Left>0.02527in</Left>
         <Height>2.52084in</Height>
         <Width>6.10416in</Width>
@@ -648,7 +670,7 @@
         <Sizing>Fit</Sizing>
         <Top>0.04042in</Top>
         <Left>5.34819in</Left>
-        <Height>0.89583in</Height>
+        <Height>0.71875in</Height>
         <Width>0.76042in</Width>
         <ZIndex>2</ZIndex>
         <Style>
@@ -658,7 +680,7 @@
         </Style>
       </Image>
     </ReportItems>
-    <Height>3.70708in</Height>
+    <Height>3.45708in</Height>
     <Style />
   </Body>
   <Width>6.24042in</Width>

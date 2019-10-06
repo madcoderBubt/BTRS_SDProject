@@ -123,7 +123,7 @@ namespace BusReservationSystem
 
         private void btnPrintTicket_Click(object sender, EventArgs e)
         {
-            PrintTicketForm ptf = new PrintTicketForm();
+            PrintTicketForm ptf = new PrintTicketForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
             ptf.ShowDialog(this);
         }
 

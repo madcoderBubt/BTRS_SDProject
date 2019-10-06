@@ -81,11 +81,6 @@
     <Compile Include="AssignRouteForm.Designer.cs">
       <DependentUpon>AssignRouteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BTRS-DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BTRS-DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BTRS_DbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -176,17 +171,6 @@
       <DependentUpon>UserLog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
-    <None Include="BTRS-DataSet.xsc">
-      <DependentUpon>BTRS-DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BTRS-DataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BTRS-DataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="BTRS-DataSet.xss">
-      <DependentUpon>BTRS-DataSet.xsd</DependentUpon>
-    </None>
     <None Include="BTRS_DbDataSet.xsc">
       <DependentUpon>BTRS_DbDataSet.xsd</DependentUpon>
     </None>

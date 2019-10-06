@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBusNo = new System.Windows.Forms.TextBox();
+            this.txtCounter = new System.Windows.Forms.TextBox();
+            this.txtTicket = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -46,26 +46,26 @@
             this.reportViewer1.Size = new System.Drawing.Size(658, 391);
             this.reportViewer1.TabIndex = 1;
             // 
-            // textBox1
+            // txtBusNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtBusNo.Location = new System.Drawing.Point(12, 12);
+            this.txtBusNo.Name = "txtBusNo";
+            this.txtBusNo.Size = new System.Drawing.Size(100, 20);
+            this.txtBusNo.TabIndex = 0;
             // 
-            // textBox2
+            // txtCounter
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
+            this.txtCounter.Location = new System.Drawing.Point(118, 12);
+            this.txtCounter.Name = "txtCounter";
+            this.txtCounter.Size = new System.Drawing.Size(100, 20);
+            this.txtCounter.TabIndex = 0;
             // 
-            // textBox3
+            // txtTicket
             // 
-            this.textBox3.Location = new System.Drawing.Point(224, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 0;
+            this.txtTicket.Location = new System.Drawing.Point(224, 12);
+            this.txtTicket.Name = "txtTicket";
+            this.txtTicket.Size = new System.Drawing.Size(100, 20);
+            this.txtTicket.TabIndex = 0;
             // 
             // button1
             // 
@@ -79,9 +79,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtTicket);
+            this.panel1.Controls.Add(this.txtCounter);
+            this.panel1.Controls.Add(this.txtBusNo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -106,9 +106,9 @@
 
         #endregion
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBusNo;
+        private System.Windows.Forms.TextBox txtCounter;
+        private System.Windows.Forms.TextBox txtTicket;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
     }
