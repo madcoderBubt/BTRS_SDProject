@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusReservationSystem.Classes;
+using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,8 +25,14 @@ namespace BusReservationSystem
 
         private void PrintTicketForm_Load(object sender, EventArgs e)
         {
+            Bus bus = new Bus();
+            //ReportDataSource reportDataSource = new ReportDataSource();
+            //reportDataSource.Name = "DataSet1";
+            //reportDataSource.Value = bus.GetPessanger("MG-36");
+            //reportViewer1.LocalReport.DataSources.Add(reportDataSource);
 
-            this.reportViewer1.RefreshReport();
+            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("PassengerList", bus.GetPessanger("MG-36")));
+            reportViewer1.RefreshReport();
         }
     }
 }

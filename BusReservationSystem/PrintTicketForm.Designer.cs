@@ -28,26 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 59);
-            this.panel1.TabIndex = 0;
             // 
             // reportViewer1
             // 
@@ -55,7 +43,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "BusReservationSystem.Report.ReportTicket.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 59);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(800, 391);
+            this.reportViewer1.Size = new System.Drawing.Size(658, 391);
             this.reportViewer1.TabIndex = 1;
             // 
             // textBox1
@@ -88,11 +76,23 @@
             this.button1.Text = "Get Print Data";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(658, 59);
+            this.panel1.TabIndex = 0;
+            // 
             // PrintTicketForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(658, 450);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.panel1);
             this.Name = "PrintTicketForm";
@@ -105,12 +105,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
