@@ -23,6 +23,7 @@ namespace BusReservationSystem
         private void PrintTicketForm_Load(object sender, EventArgs e)
         {
             txtBusNo.Text = _busNo;
+            txtBusNo.Enabled = false;
             txtCounter.Text = LogInfo.user_counter;
             txtCounter.Enabled = false;
             txtTicket.Text = "";
@@ -36,6 +37,20 @@ namespace BusReservationSystem
             Bus bus = new Bus();
             reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("PassengerList", bus.GetPessanger(_busNo)));
             reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer1.RefreshReport();
+        }
+
+        private void BtnPrintData_Click(object sender, EventArgs e)
+        {
+            Bus bus = new Bus();
+            DataTable data1 = new DataTable();
+            data1 = bus.GetPessanger(_busNo);
+            var data = from row in data1.AsEnumerable()
+                       where row.Field<int>("ticket_no") == int.Parse(txtTicket.Text)
+                       select row;
+
+            reportViewer1.LocalReport.DataSources.Clear();
+            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("PassengerList", data.CopyToDataTable()));
             reportViewer1.RefreshReport();
         }
     }

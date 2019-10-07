@@ -32,7 +32,7 @@
             this.txtBusNo = new System.Windows.Forms.TextBox();
             this.txtCounter = new System.Windows.Forms.TextBox();
             this.txtTicket = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPrintData = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,18 +67,19 @@
             this.txtTicket.Size = new System.Drawing.Size(100, 20);
             this.txtTicket.TabIndex = 0;
             // 
-            // button1
+            // btnPrintData
             // 
-            this.button1.Location = new System.Drawing.Point(330, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Get Print Data";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPrintData.Location = new System.Drawing.Point(330, 10);
+            this.btnPrintData.Name = "btnPrintData";
+            this.btnPrintData.Size = new System.Drawing.Size(100, 23);
+            this.btnPrintData.TabIndex = 1;
+            this.btnPrintData.Text = "Get Print Data";
+            this.btnPrintData.UseVisualStyleBackColor = true;
+            this.btnPrintData.Click += new System.EventHandler(this.BtnPrintData_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnPrintData);
             this.panel1.Controls.Add(this.txtTicket);
             this.panel1.Controls.Add(this.txtCounter);
             this.panel1.Controls.Add(this.txtBusNo);
@@ -109,7 +110,7 @@
         private System.Windows.Forms.TextBox txtBusNo;
         private System.Windows.Forms.TextBox txtCounter;
         private System.Windows.Forms.TextBox txtTicket;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPrintData;
         private System.Windows.Forms.Panel panel1;
     }
 }
