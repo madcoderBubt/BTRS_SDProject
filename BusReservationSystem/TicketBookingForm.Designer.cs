@@ -48,9 +48,9 @@
             // 
             // txtTicketNo
             // 
+            this.txtTicketNo.Enabled = false;
             this.txtTicketNo.Location = new System.Drawing.Point(13, 71);
             this.txtTicketNo.Name = "txtTicketNo";
-            this.txtTicketNo.ReadOnly = true;
             this.txtTicketNo.Size = new System.Drawing.Size(100, 20);
             this.txtTicketNo.TabIndex = 0;
             this.txtTicketNo.TabStop = false;
@@ -58,9 +58,9 @@
             // 
             // txtBusNo
             // 
+            this.txtBusNo.Enabled = false;
             this.txtBusNo.Location = new System.Drawing.Point(119, 71);
             this.txtBusNo.Name = "txtBusNo";
-            this.txtBusNo.ReadOnly = true;
             this.txtBusNo.Size = new System.Drawing.Size(99, 20);
             this.txtBusNo.TabIndex = 0;
             this.txtBusNo.TabStop = false;
@@ -130,9 +130,9 @@
             // 
             // txtFrom
             // 
+            this.txtFrom.Enabled = false;
             this.txtFrom.Location = new System.Drawing.Point(224, 71);
             this.txtFrom.Name = "txtFrom";
-            this.txtFrom.ReadOnly = true;
             this.txtFrom.Size = new System.Drawing.Size(108, 20);
             this.txtFrom.TabIndex = 4;
             this.txtFrom.TabStop = false;
@@ -155,6 +155,7 @@
             this.btnReset.TabIndex = 5;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // btnBookNow
             // 

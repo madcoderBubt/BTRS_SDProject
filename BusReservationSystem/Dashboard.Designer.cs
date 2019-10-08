@@ -131,14 +131,14 @@
             this.aboutUsToolStripMenuItem.ImageTransparentColor = System.Drawing.SystemColors.Info;
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             this.aboutUsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // contactUsToolStripMenuItem
             // 
             this.contactUsToolStripMenuItem.Name = "contactUsToolStripMenuItem";
-            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.contactUsToolStripMenuItem.Text = "Contact Us";
             this.contactUsToolStripMenuItem.Click += new System.EventHandler(this.contactUsToolStripMenuItem_Click);
             // 
@@ -228,6 +228,7 @@
             // 
             // btnFindBus
             // 
+            this.btnFindBus.Enabled = false;
             this.btnFindBus.Location = new System.Drawing.Point(3, 159);
             this.btnFindBus.Name = "btnFindBus";
             this.btnFindBus.Size = new System.Drawing.Size(205, 45);

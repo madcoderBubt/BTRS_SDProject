@@ -50,26 +50,39 @@ namespace BusReservationSystem
             passenger.end_loc = cmbDestination.Text;
             passenger.full_name = txtFullName.Text;
             passenger.phone_no = txtPhoneNo.Text;
-            passenger.seat_length = int.Parse(txtSeatLen.Text);
-            passenger.ticket_no = int.Parse(txtTicketNo.Text);
+            /*passenger.seat_length = */int.TryParse(txtSeatLen.Text,out passenger.seat_length);
+            /*passenger.ticket_no = */int.TryParse(txtTicketNo.Text,out passenger.ticket_no);
 
-            Bus bus = new Bus();
-            bool s = false;
-            if (MessageBox.Show("$" + passenger.GetPrice().ToString(),"Price for U!",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (txtFullName.Text != "" && txtPhoneNo.Text != "" && txtSeatLen.Text != "")
             {
-                s = bus.SetPassenger(passenger);
+                Bus bus = new Bus();
+                bool s = false;
+                if (MessageBox.Show("$" + passenger.GetPrice().ToString(), "Price for U!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    s = bus.SetPassenger(passenger);
+                }
+                if (s)
+                    MessageBox.Show("Updated Successfully");
+                else
+                    MessageBox.Show("Opps Something Worng!");
             }
-            if (s)
-                MessageBox.Show("Updated Successfully");
             else
-                MessageBox.Show("Opps Something Worng!");
-
+                MessageBox.Show("Please Fill the form.");
             _dashboard.RefreshGrid();
         }
 
         private void TicketBookingForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             _dashboard.RefreshGrid();
+        }
+
+        private void BtnReset_Click(object sender, EventArgs e)
+        {
+            foreach (Control item in this.Controls)
+            {
+                if (item is TextBox && item.Enabled == true)
+                    item.Text = string.Empty;
+            }
         }
     }
 }

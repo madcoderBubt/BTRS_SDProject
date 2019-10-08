@@ -46,7 +46,10 @@ namespace BusReservationSystem
         {
             DataTable data = new DataTable();
             Bus bus = new Bus();
-            data = bus.GetPassenger(txtBusNo.Text.Trim(), txtCounter.Text.Trim(), int.Parse(txtTicketNo.Text));
+
+            if(txtBusNo.Text != "" && txtTicketNo.Text != "")
+                data = bus.GetPassenger(txtBusNo.Text.Trim(), txtCounter.Text.Trim(), int.Parse(txtTicketNo.Text));
+
             txtFullName.Text = data.Rows[0]["full_name"].ToString();
             txtPhoneNo.Text = data.Rows[0]["phone_no"].ToString();
             txtFrom.Text = data.Rows[0]["start_loc"].ToString();
