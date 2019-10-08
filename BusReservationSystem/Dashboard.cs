@@ -83,7 +83,7 @@ namespace BusReservationSystem
         {
             //Menu: Help > Contact Us
             //Opens HyperLink on default browser.
-            System.Diagnostics.Process.Start("https://www.linkedin.com/in/madcoder-bubt/");
+            System.Diagnostics.Process.Start("https://madcoderbubt.github.io/MadCoderPersonal");
         }
 
         private void userInfoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,7 +134,8 @@ namespace BusReservationSystem
 
         private void BtnCancelTicket_Click(object sender, EventArgs e)
         {
-
+            CancelTicketForm ctf = new CancelTicketForm(this);
+            ctf.ShowDialog(this);
         }
 
         private void BtnFindBus_Click(object sender, EventArgs e)

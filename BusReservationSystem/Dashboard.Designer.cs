@@ -39,6 +39,7 @@
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignBussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignRouteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addCounterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.txtCounter = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -98,6 +99,7 @@
             // 
             // logOutToolStripMenuItem
             // 
+            this.logOutToolStripMenuItem.Image = global::BusReservationSystem.Properties.Resources.attention_512;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
             this.logOutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F4)));
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
@@ -106,6 +108,7 @@
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.Image = global::BusReservationSystem.Properties.Resources.x_png_35402;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
@@ -123,15 +126,19 @@
             // 
             // aboutUsToolStripMenuItem
             // 
+            this.aboutUsToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.aboutUsToolStripMenuItem.Image = global::BusReservationSystem.Properties.Resources.attention_512;
+            this.aboutUsToolStripMenuItem.ImageTransparentColor = System.Drawing.SystemColors.Info;
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.aboutUsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // contactUsToolStripMenuItem
             // 
             this.contactUsToolStripMenuItem.Name = "contactUsToolStripMenuItem";
-            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contactUsToolStripMenuItem.Text = "Contact Us";
             this.contactUsToolStripMenuItem.Click += new System.EventHandler(this.contactUsToolStripMenuItem_Click);
             // 
@@ -139,22 +146,30 @@
             // 
             this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asignBussToolStripMenuItem,
-            this.asignRouteToolStripMenuItem});
+            this.asignRouteToolStripMenuItem,
+            this.addCounterToolStripMenuItem});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.adminToolStripMenuItem.Text = "Admin";
             // 
             // asignBussToolStripMenuItem
             // 
+            this.asignBussToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.asignBussToolStripMenuItem.Name = "asignBussToolStripMenuItem";
-            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.asignBussToolStripMenuItem.Text = "Asign Buss";
             // 
             // asignRouteToolStripMenuItem
             // 
             this.asignRouteToolStripMenuItem.Name = "asignRouteToolStripMenuItem";
-            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.asignRouteToolStripMenuItem.Text = "Asign Route";
+            // 
+            // addCounterToolStripMenuItem
+            // 
+            this.addCounterToolStripMenuItem.Name = "addCounterToolStripMenuItem";
+            this.addCounterToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.addCounterToolStripMenuItem.Text = "Add Counter";
             // 
             // button1
             // 
@@ -402,5 +417,6 @@
         private System.Windows.Forms.ComboBox cmbBusType;
         private System.Windows.Forms.DateTimePicker dtpBusTime;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem addCounterToolStripMenuItem;
     }
 }

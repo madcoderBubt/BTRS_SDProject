@@ -86,6 +86,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BTRS_DbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CancelTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelTicketForm.Designer.cs">
+      <DependentUpon>CancelTicketForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Classes\Bus.cs" />
     <Compile Include="Classes\LogInfo.cs" />
@@ -137,6 +143,9 @@
     </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelTicketForm.resx">
+      <DependentUpon>CancelTicketForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

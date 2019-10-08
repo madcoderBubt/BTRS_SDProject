@@ -35,7 +35,7 @@ namespace BusReservationSystem
              */
 
             Bus bus = new Bus();
-            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("PassengerList", bus.GetPessanger(_busNo)));
+            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("PassengerList", bus.GetPessangers(_busNo)));
             reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
             reportViewer1.RefreshReport();
         }
@@ -44,13 +44,24 @@ namespace BusReservationSystem
         {
             Bus bus = new Bus();
             DataTable data1 = new DataTable();
-            data1 = bus.GetPessanger(_busNo);
-            var data = from row in data1.AsEnumerable()
-                       where row.Field<int>("ticket_no") == int.Parse(txtTicket.Text)
-                       select row;
+            data1 = bus.GetPessangers(_busNo);
+            try
+            {
+                if (txtTicket.Text.Trim() != "")
+                {
+                    var data = from row in data1.AsEnumerable()
+                               where row.Field<int>("ticket_no") == int.Parse(txtTicket.Text)
+                               select row;
+                    data1 = data.CopyToDataTable();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR: 404\nTicket Number not found!");
+            }            
 
             reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("PassengerList", data.CopyToDataTable()));
+            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("PassengerList", data1));
             reportViewer1.RefreshReport();
         }
     }

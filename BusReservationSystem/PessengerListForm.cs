@@ -22,7 +22,7 @@ namespace BusReservationSystem
         {
             Classes.Bus bus = new Classes.Bus();
             DataTable data = new DataTable();
-            data = bus.GetPessanger(txtBusNo.Text);
+            data = bus.GetPessangers(txtBusNo.Text);
             dataGridView1.DataSource = data;
         }
 
@@ -30,7 +30,7 @@ namespace BusReservationSystem
         {
             Classes.Bus bus = new Classes.Bus();
             DataTable data = new DataTable();
-            data = bus.GetPessanger(txtBusNo.Text);
+            data = bus.GetPessangers(txtBusNo.Text);
             dataGridView1.DataSource = data;
             txtBusNo.Text = _busNo;
             button1.PerformClick();

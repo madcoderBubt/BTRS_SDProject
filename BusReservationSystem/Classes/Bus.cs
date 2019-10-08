@@ -67,7 +67,23 @@ namespace BusReservationSystem.Classes
             return data;
         }
 
-        public DataTable GetPessanger(string busNo)
+        public DataTable GetPassenger(string busNo,string counter, int ticket)
+        {
+            DataTable data = new DataTable();
+            using (SqlConnection sqlCon = new SqlConnection(conStr))
+            {
+                string sql = "select * from [Passenger] where bus_no = @busNo and counter = @counter and ticket_no = @ticket";
+                SqlCommand cmd = new SqlCommand(sql, sqlCon);
+                cmd.Parameters.AddWithValue("@busNo", busNo);
+                cmd.Parameters.AddWithValue("@counter", counter);
+                cmd.Parameters.AddWithValue("@ticket", ticket);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(data);
+            }
+            return data;
+        }
+
+        public DataTable GetPessangers(string busNo)
         {
             //Get Pessanger List for speacific bus
             DataTable data = new DataTable();
@@ -136,13 +152,15 @@ namespace BusReservationSystem.Classes
             bool b;
             using (SqlConnection sqlCon = new SqlConnection(conStr))
             {
+                //Deleting Passenger Info
                 string sql = "Delete from [Passaneger] where [bus_no] = @busNo and [ticket_no] = @ticketNo and [counter] = @counter";
                 SqlCommand cmd = new SqlCommand(sql, sqlCon);
-                cmd.Parameters.AddWithValue("", p.bus_no);
-                cmd.Parameters.AddWithValue("", p.counter);
-                cmd.Parameters.AddWithValue("", p.ticket_no);
+                cmd.Parameters.AddWithValue("@busNo", p.bus_no);
+                cmd.Parameters.AddWithValue("@counter", p.counter);
+                cmd.Parameters.AddWithValue("@ticketNo", p.ticket_no);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
+                    //Updating Avail Seat
                     string sqlUpdate = "Update [Bus] set [avail_seat] = "
                         + (GetAvailSeat(p.bus_no) + p.seat_length)
                         + "where [no] = '" + p.bus_no + "'";

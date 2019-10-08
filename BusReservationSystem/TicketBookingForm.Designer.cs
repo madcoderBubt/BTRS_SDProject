@@ -39,7 +39,7 @@
             this.txtSeatLen = new System.Windows.Forms.TextBox();
             this.txtFrom = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.btnBookNow = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblAvailSeat = new System.Windows.Forms.Label();
@@ -147,14 +147,14 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Destination";
             // 
-            // btnCancel
+            // btnReset
             // 
-            this.btnCancel.Location = new System.Drawing.Point(13, 223);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 28);
-            this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnReset.Location = new System.Drawing.Point(13, 223);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(100, 28);
+            this.btnReset.TabIndex = 5;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
             // btnBookNow
             // 
@@ -194,7 +194,7 @@
             this.Controls.Add(this.lblAvailSeat);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnBookNow);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtFrom);
             this.Controls.Add(this.txtSeatLen);
             this.Controls.Add(this.label4);
@@ -233,7 +233,7 @@
         private System.Windows.Forms.TextBox txtSeatLen;
         private System.Windows.Forms.TextBox txtFrom;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnBookNow;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblAvailSeat;
