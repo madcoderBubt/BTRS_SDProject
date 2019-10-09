@@ -168,6 +168,9 @@
     <EmbeddedResource Include="AsignCounter.resx">
       <DependentUpon>AsignCounter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AssignBusForm.resx">
+      <DependentUpon>AssignBusForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BusListForm.resx">
       <DependentUpon>BusListForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +242,7 @@
     <None Include="Resources\attention-512.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\b54944f7322722034cfda55e601b4f8d-travel-bus-round-icon-by-vexels.png" />
     <Content Include="Resources\caki.jpg" />
     <Content Include="Resources\ili.jpg" />
     <Content Include="Resources\MC-logo-c.png" />

@@ -133,6 +133,7 @@
             // 
             // asignRouteToolStripMenuItem
             // 
+            this.asignRouteToolStripMenuItem.Enabled = false;
             this.asignRouteToolStripMenuItem.Name = "asignRouteToolStripMenuItem";
             this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.asignRouteToolStripMenuItem.Text = "Asign Route";
@@ -143,6 +144,7 @@
             this.addCounterToolStripMenuItem.Name = "addCounterToolStripMenuItem";
             this.addCounterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addCounterToolStripMenuItem.Text = "Add Counter";
+            this.addCounterToolStripMenuItem.Click += new System.EventHandler(this.AddCounterToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -193,7 +195,7 @@
             this.btnFindBus.Name = "btnFindBus";
             this.btnFindBus.Size = new System.Drawing.Size(205, 45);
             this.btnFindBus.TabIndex = 4;
-            this.btnFindBus.Text = "Get Available Bus";
+            this.btnFindBus.Text = "Bus List";
             this.btnFindBus.UseVisualStyleBackColor = true;
             this.btnFindBus.Click += new System.EventHandler(this.BtnFindBus_Click);
             // 

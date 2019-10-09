@@ -19,7 +19,7 @@ namespace BusReservationSystem.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -66,6 +66,16 @@ namespace BusReservationSystem.Properties {
         internal static System.Drawing.Bitmap attention_512 {
             get {
                 object obj = ResourceManager.GetObject("attention-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap b54944f7322722034cfda55e601b4f8d_travel_bus_round_icon_by_vexels {
+            get {
+                object obj = ResourceManager.GetObject("b54944f7322722034cfda55e601b4f8d-travel-bus-round-icon-by-vexels", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

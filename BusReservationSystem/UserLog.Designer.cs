@@ -45,23 +45,26 @@
             this.txtRegister_Name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.grpLogin = new System.Windows.Forms.GroupBox();
-            this.btnAbout = new System.Windows.Forms.PictureBox();
             this.btnLinkR = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtLog_Passsword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtLog_Phone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAbout = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.grpRegister.SuspendLayout();
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAbout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.btnExit);
@@ -78,7 +81,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(3, 6);
+            this.label3.Location = new System.Drawing.Point(32, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 15);
             this.label3.TabIndex = 2;
@@ -259,17 +262,6 @@
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "LogIn";
             // 
-            // btnAbout
-            // 
-            this.btnAbout.Image = global::BusReservationSystem.Properties.Resources.attention_512;
-            this.btnAbout.Location = new System.Drawing.Point(259, 9);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(22, 23);
-            this.btnAbout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAbout.TabIndex = 4;
-            this.btnAbout.TabStop = false;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
-            // 
             // btnLinkR
             // 
             this.btnLinkR.AutoSize = true;
@@ -331,6 +323,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Phone No.";
             // 
+            // btnAbout
+            // 
+            this.btnAbout.Image = global::BusReservationSystem.Properties.Resources.attention_512;
+            this.btnAbout.Location = new System.Drawing.Point(259, 9);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(22, 23);
+            this.btnAbout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAbout.TabIndex = 4;
+            this.btnAbout.TabStop = false;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.b54944f7322722034cfda55e601b4f8d_travel_bus_round_icon_by_vexels;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // UserLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,6 +364,7 @@
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAbout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -381,5 +395,6 @@
         private System.Windows.Forms.ComboBox cmbRegister_Role;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.PictureBox btnAbout;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

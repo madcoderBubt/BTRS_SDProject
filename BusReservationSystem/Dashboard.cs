@@ -50,8 +50,7 @@ namespace BusReservationSystem
                 Name = "btnDel",
                 HeaderText = "Del Button",
                 Text = "Delete",
-                UseColumnTextForButtonValue = true,
-
+                UseColumnTextForButtonValue = true
             };
             dataGridView1.Columns.Add(buttonColumn);
             //Initialize Bus Type in search combo box
@@ -63,9 +62,14 @@ namespace BusReservationSystem
             lblCurrentUser.Text = LogInfo.user_name +
                 " ( " + LogInfo.user_counter+ " )";
             if (LogInfo.user_role != 1)
+            {
                 adminToolStripMenuItem.Enabled = false;
+            }
             else
+            {
                 adminToolStripMenuItem.Enabled = true;
+                btnFindBus.Enabled = true;
+            }
         }
 
         //Exit Application
@@ -150,7 +154,8 @@ namespace BusReservationSystem
 
         private void BtnFindBus_Click(object sender, EventArgs e)
         {
-            //txtCounter.Text = dataGridView1.Columns["btnDel"].Index.ToString();
+            BusListForm busList = new BusListForm();
+            busList.ShowDialog(this);
         }
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -171,6 +176,11 @@ namespace BusReservationSystem
         }
 
         private void AsignRouteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void AddCounterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AsignCounterForm asignCounter = new AsignCounterForm();
             asignCounter.ShowDialog(this);
