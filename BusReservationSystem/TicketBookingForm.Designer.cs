@@ -75,7 +75,7 @@
             this.cmbDestination.MaxDropDownItems = 4;
             this.cmbDestination.Name = "cmbDestination";
             this.cmbDestination.Size = new System.Drawing.Size(213, 21);
-            this.cmbDestination.TabIndex = 1;
+            this.cmbDestination.TabIndex = 4;
             // 
             // label1
             // 
@@ -91,7 +91,7 @@
             this.txtFullName.Location = new System.Drawing.Point(119, 106);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(213, 20);
-            this.txtFullName.TabIndex = 3;
+            this.txtFullName.TabIndex = 1;
             this.txtFullName.Text = "Mad coder";
             // 
             // label2
@@ -108,7 +108,7 @@
             this.txtPhoneNo.Location = new System.Drawing.Point(119, 132);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(213, 20);
-            this.txtPhoneNo.TabIndex = 3;
+            this.txtPhoneNo.TabIndex = 2;
             this.txtPhoneNo.Text = "+8801632740075";
             // 
             // label3
@@ -134,7 +134,7 @@
             this.txtFrom.Location = new System.Drawing.Point(224, 71);
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(108, 20);
-            this.txtFrom.TabIndex = 4;
+            this.txtFrom.TabIndex = 0;
             this.txtFrom.TabStop = false;
             this.txtFrom.Text = "from";
             // 
@@ -152,7 +152,7 @@
             this.btnReset.Location = new System.Drawing.Point(13, 223);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(100, 28);
-            this.btnReset.TabIndex = 5;
+            this.btnReset.TabIndex = 6;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);

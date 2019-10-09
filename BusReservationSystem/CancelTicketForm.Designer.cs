@@ -69,7 +69,7 @@
             this.txtBusNo.Location = new System.Drawing.Point(12, 46);
             this.txtBusNo.Name = "txtBusNo";
             this.txtBusNo.Size = new System.Drawing.Size(100, 20);
-            this.txtBusNo.TabIndex = 1;
+            this.txtBusNo.TabIndex = 0;
             // 
             // label2
             // 
@@ -102,14 +102,14 @@
             this.txtTicketNo.Location = new System.Drawing.Point(230, 46);
             this.txtTicketNo.Name = "txtTicketNo";
             this.txtTicketNo.Size = new System.Drawing.Size(100, 20);
-            this.txtTicketNo.TabIndex = 1;
+            this.txtTicketNo.TabIndex = 2;
             // 
             // btnReset
             // 
             this.btnReset.Location = new System.Drawing.Point(12, 220);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 32);
-            this.btnReset.TabIndex = 4;
+            this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
@@ -120,7 +120,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(177, 220);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 32);
-            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
@@ -129,7 +129,7 @@
             this.btnDelete.Location = new System.Drawing.Point(258, 220);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 32);
-            this.btnDelete.TabIndex = 4;
+            this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
@@ -140,7 +140,7 @@
             this.ckbEnable.Location = new System.Drawing.Point(12, 258);
             this.ckbEnable.Name = "ckbEnable";
             this.ckbEnable.Size = new System.Drawing.Size(80, 17);
-            this.ckbEnable.TabIndex = 5;
+            this.ckbEnable.TabIndex = 14;
             this.ckbEnable.Text = "Enable Edit";
             this.ckbEnable.UseVisualStyleBackColor = true;
             this.ckbEnable.CheckStateChanged += new System.EventHandler(this.CkbEnable_CheckStateChanged);
@@ -172,7 +172,7 @@
             this.txtSeatLen.Location = new System.Drawing.Point(69, 100);
             this.txtSeatLen.Name = "txtSeatLen";
             this.txtSeatLen.Size = new System.Drawing.Size(100, 20);
-            this.txtSeatLen.TabIndex = 10;
+            this.txtSeatLen.TabIndex = 7;
             // 
             // label8
             // 
@@ -189,7 +189,7 @@
             this.txtPrice.Location = new System.Drawing.Point(213, 100);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 20);
-            this.txtPrice.TabIndex = 11;
+            this.txtPrice.TabIndex = 8;
             // 
             // label9
             // 
@@ -206,7 +206,7 @@
             this.txtTo.Location = new System.Drawing.Point(213, 74);
             this.txtTo.Name = "txtTo";
             this.txtTo.Size = new System.Drawing.Size(100, 20);
-            this.txtTo.TabIndex = 12;
+            this.txtTo.TabIndex = 6;
             // 
             // label7
             // 
@@ -223,7 +223,7 @@
             this.txtFrom.Location = new System.Drawing.Point(69, 74);
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(100, 20);
-            this.txtFrom.TabIndex = 13;
+            this.txtFrom.TabIndex = 5;
             // 
             // label6
             // 
@@ -240,7 +240,7 @@
             this.txtPhoneNo.Location = new System.Drawing.Point(107, 48);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(206, 20);
-            this.txtPhoneNo.TabIndex = 14;
+            this.txtPhoneNo.TabIndex = 4;
             // 
             // label5
             // 
@@ -257,7 +257,7 @@
             this.txtFullName.Location = new System.Drawing.Point(107, 22);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(206, 20);
-            this.txtFullName.TabIndex = 15;
+            this.txtFullName.TabIndex = 3;
             // 
             // label4
             // 
@@ -273,7 +273,7 @@
             this.btnGetData.Location = new System.Drawing.Point(96, 220);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(75, 32);
-            this.btnGetData.TabIndex = 4;
+            this.btnGetData.TabIndex = 10;
             this.btnGetData.Text = "Get";
             this.btnGetData.UseVisualStyleBackColor = true;
             this.btnGetData.Click += new System.EventHandler(this.BtnGetData_Click);

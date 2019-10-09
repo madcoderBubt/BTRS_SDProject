@@ -73,6 +73,7 @@ namespace BusReservationSystem
             passenger.bus_no = txtBusNo.Text;
             passenger.counter = txtCounter.Text;
             passenger.ticket_no = int.Parse(txtTicketNo.Text);
+            passenger.seat_length = int.Parse(txtSeatLen.Text);
 
             Bus bus = new Bus();
             bus.DeletePassenger(passenger);

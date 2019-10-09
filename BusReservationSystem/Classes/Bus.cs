@@ -153,11 +153,12 @@ namespace BusReservationSystem.Classes
             using (SqlConnection sqlCon = new SqlConnection(conStr))
             {
                 //Deleting Passenger Info
-                string sql = "Delete from [Passaneger] where [bus_no] = @busNo and [ticket_no] = @ticketNo and [counter] = @counter";
+                string sql = "Delete from [Passenger] where [bus_no] = @busNo and [ticket_no] = @ticketNo and [counter] = @counter";
                 SqlCommand cmd = new SqlCommand(sql, sqlCon);
                 cmd.Parameters.AddWithValue("@busNo", p.bus_no);
                 cmd.Parameters.AddWithValue("@counter", p.counter);
                 cmd.Parameters.AddWithValue("@ticketNo", p.ticket_no);
+                sqlCon.Open();
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     //Updating Avail Seat

@@ -93,7 +93,7 @@
             // 
             this.userInfoToolStripMenuItem.Name = "userInfoToolStripMenuItem";
             this.userInfoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.userInfoToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.userInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.userInfoToolStripMenuItem.Text = "User Info";
             this.userInfoToolStripMenuItem.Click += new System.EventHandler(this.userInfoToolStripMenuItem_Click);
             // 
@@ -102,7 +102,7 @@
             this.logOutToolStripMenuItem.Image = global::BusReservationSystem.Properties.Resources.attention_512;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
             this.logOutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F4)));
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -111,7 +111,7 @@
             this.exitToolStripMenuItem.Image = global::BusReservationSystem.Properties.Resources.x_png_35402;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -176,7 +176,7 @@
             this.button1.Location = new System.Drawing.Point(379, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(59, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -186,7 +186,7 @@
             this.txtCounter.Location = new System.Drawing.Point(3, 3);
             this.txtCounter.Name = "txtCounter";
             this.txtCounter.Size = new System.Drawing.Size(131, 20);
-            this.txtCounter.TabIndex = 0;
+            this.txtCounter.TabIndex = 6;
             this.txtCounter.Text = "Counter Name";
             // 
             // panel2
@@ -221,7 +221,7 @@
             this.btnPessangerList.Location = new System.Drawing.Point(3, 210);
             this.btnPessangerList.Name = "btnPessangerList";
             this.btnPessangerList.Size = new System.Drawing.Size(205, 45);
-            this.btnPessangerList.TabIndex = 0;
+            this.btnPessangerList.TabIndex = 5;
             this.btnPessangerList.Text = "Pessanger List";
             this.btnPessangerList.UseVisualStyleBackColor = true;
             this.btnPessangerList.Click += new System.EventHandler(this.button2_Click);
@@ -232,7 +232,7 @@
             this.btnFindBus.Location = new System.Drawing.Point(3, 159);
             this.btnFindBus.Name = "btnFindBus";
             this.btnFindBus.Size = new System.Drawing.Size(205, 45);
-            this.btnFindBus.TabIndex = 0;
+            this.btnFindBus.TabIndex = 4;
             this.btnFindBus.Text = "Get Available Bus";
             this.btnFindBus.UseVisualStyleBackColor = true;
             this.btnFindBus.Click += new System.EventHandler(this.BtnFindBus_Click);
@@ -242,7 +242,7 @@
             this.btnPrintTicket.Location = new System.Drawing.Point(3, 108);
             this.btnPrintTicket.Name = "btnPrintTicket";
             this.btnPrintTicket.Size = new System.Drawing.Size(205, 45);
-            this.btnPrintTicket.TabIndex = 0;
+            this.btnPrintTicket.TabIndex = 3;
             this.btnPrintTicket.Text = "Print Ticket";
             this.btnPrintTicket.UseVisualStyleBackColor = true;
             this.btnPrintTicket.Click += new System.EventHandler(this.btnPrintTicket_Click);
@@ -259,7 +259,7 @@
             this.btnCancelTicket.Location = new System.Drawing.Point(3, 57);
             this.btnCancelTicket.Name = "btnCancelTicket";
             this.btnCancelTicket.Size = new System.Drawing.Size(205, 45);
-            this.btnCancelTicket.TabIndex = 0;
+            this.btnCancelTicket.TabIndex = 2;
             this.btnCancelTicket.Text = "Cancel Ticket";
             this.btnCancelTicket.UseVisualStyleBackColor = false;
             this.btnCancelTicket.Click += new System.EventHandler(this.BtnCancelTicket_Click);
@@ -269,7 +269,7 @@
             this.btnBookTicket.Location = new System.Drawing.Point(3, 6);
             this.btnBookTicket.Name = "btnBookTicket";
             this.btnBookTicket.Size = new System.Drawing.Size(205, 45);
-            this.btnBookTicket.TabIndex = 0;
+            this.btnBookTicket.TabIndex = 1;
             this.btnBookTicket.Text = "Book Ticket";
             this.btnBookTicket.UseVisualStyleBackColor = true;
             this.btnBookTicket.Click += new System.EventHandler(this.btnBookTicket_Click);
@@ -290,7 +290,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(587, 399);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 11;
+            this.dataGridView1.TabStop = false;
             // 
             // panel1
             // 
@@ -336,7 +337,7 @@
             this.cmbBusType.Location = new System.Drawing.Point(140, 3);
             this.cmbBusType.Name = "cmbBusType";
             this.cmbBusType.Size = new System.Drawing.Size(124, 21);
-            this.cmbBusType.TabIndex = 1;
+            this.cmbBusType.TabIndex = 7;
             this.cmbBusType.Text = "Bus Type";
             // 
             // dtpBusTime
@@ -345,14 +346,14 @@
             this.dtpBusTime.Location = new System.Drawing.Point(270, 3);
             this.dtpBusTime.Name = "dtpBusTime";
             this.dtpBusTime.Size = new System.Drawing.Size(103, 20);
-            this.dtpBusTime.TabIndex = 3;
+            this.dtpBusTime.TabIndex = 8;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(444, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 23);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 10;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.btnResetClick);
