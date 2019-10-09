@@ -19,10 +19,12 @@ namespace BusReservationSystem.Classes
             DataTable dataTable = new DataTable();
             using (SqlConnection con = new SqlConnection(conStr))
             {
+                SqlDataAdapter da = new SqlDataAdapter();
+                //Select All Busses based on counter
                 string sql = "select [Bus].*, [Bus_Counter].[date], [time] from [Bus] full outer join [Bus_Counter] on [Bus].[no] = [Bus_Counter].[bus_no] where [Bus_Counter].[counter_name] = @currentCounter";
-                SqlCommand cmd = new SqlCommand(sql,con);
+                SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@currentCounter", LogInfo.user_counter);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.SelectCommand = cmd;                                
                 da.Fill(dataTable);
             }
             return dataTable;
@@ -50,6 +52,22 @@ namespace BusReservationSystem.Classes
                 da.Fill(dataTable);
             }
             return dataTable;
+        }
+
+        public bool DelBus(string busNo)
+        {
+            bool status = false;
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                string sql = "Delete from [Bus] where [no] = @busNo";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@busNo", busNo);
+                con.Open();
+                if (cmd.ExecuteNonQuery() > 0)
+                    status = true;
+
+            }
+            return status;
         }
 
         public DataTable GetBusType()

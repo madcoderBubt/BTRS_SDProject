@@ -51,3 +51,6 @@ C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\Bu
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\RdlCompile.cache
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\RdlCompile.compiled
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.CancelTicketForm.resources
+C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.AsignBusForm.resources
+C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.AsignCounterForm.resources
+C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.BusListForm.resources

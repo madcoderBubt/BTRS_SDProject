@@ -19,7 +19,7 @@ namespace BusReservationSystem
             _userLog = userLog; // for avoiding unexpected system running.
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnPassenger_Click(object sender, EventArgs e)
         {
             //Pessanger List Button Click
             PessengerListForm pessengerList = new PessengerListForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
@@ -44,8 +44,16 @@ namespace BusReservationSystem
         {
             Bus bus = new Bus();
             //Initialize DataGridView
-            dataGridView1.DataSource = bus.GetBuses();
-            dataGridView1.Sort(dataGridView1.Columns["date"], ListSortDirection.Ascending);
+            RefreshGrid();
+            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn()
+            {
+                Name = "btnDel",
+                HeaderText = "Del Button",
+                Text = "Delete",
+                UseColumnTextForButtonValue = true,
+
+            };
+            dataGridView1.Columns.Add(buttonColumn);
             //Initialize Bus Type in search combo box
             cmbBusType.DataSource = bus.GetBusType();
             cmbBusType.ValueMember = "id";
@@ -107,9 +115,7 @@ namespace BusReservationSystem
         private void btnResetClick(object sender, EventArgs e)
         {
             //Search: Reset Button
-            Bus bus = new Bus();
-            dataGridView1.DataSource = bus.GetBuses();
-            dataGridView1.Sort(dataGridView1.Columns["date"], ListSortDirection.Ascending);
+            RefreshGrid();
         }
 
         private void btnBookTicket_Click(object sender, EventArgs e)
@@ -129,7 +135,11 @@ namespace BusReservationSystem
 
         public void RefreshGrid()
         {
-            button2.PerformClick();
+            Bus bus = new Bus();
+            DataTable dataTable = new DataTable();
+            dataTable = bus.GetBuses();
+            dataGridView1.DataSource = bus.GetBuses();
+            dataGridView1.Sort(dataGridView1.Columns["date"], ListSortDirection.Ascending);
         }
 
         private void BtnCancelTicket_Click(object sender, EventArgs e)
@@ -140,7 +150,30 @@ namespace BusReservationSystem
 
         private void BtnFindBus_Click(object sender, EventArgs e)
         {
+            //txtCounter.Text = dataGridView1.Columns["btnDel"].Index.ToString();
+        }
 
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataGridView1.Columns["btnDel"].Index)
+            {
+                Bus bus = new Bus();
+                if (MessageBox.Show("Are you sure about deleting this Bus?","Warning!",MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    bus.DelBus(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
+                RefreshGrid();
+            }
+        }
+
+        private void AsignBussToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AsignBusForm asignBus = new AsignBusForm();
+            asignBus.ShowDialog(this);
+        }
+
+        private void AsignRouteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AsignCounterForm asignCounter = new AsignCounterForm();
+            asignCounter.ShowDialog(this);
         }
     }
 }

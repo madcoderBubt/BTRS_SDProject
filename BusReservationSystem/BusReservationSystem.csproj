@@ -69,6 +69,18 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AsignBusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignBusForm.Designer.cs">
+      <DependentUpon>AsignBusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignCounter.Designer.cs">
+      <DependentUpon>AsignCounter.cs</DependentUpon>
+    </Compile>
     <Compile Include="AssignBusForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BTRS_DbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BusListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusListForm.Designer.cs">
+      <DependentUpon>BusListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CancelTicketForm.cs">
       <SubType>Form</SubType>
@@ -143,6 +161,15 @@
     </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignBusForm.resx">
+      <DependentUpon>AsignBusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignCounter.resx">
+      <DependentUpon>AsignCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusListForm.resx">
+      <DependentUpon>BusListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CancelTicketForm.resx">
       <DependentUpon>CancelTicketForm.cs</DependentUpon>
