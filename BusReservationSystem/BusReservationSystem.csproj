@@ -81,12 +81,6 @@
     <Compile Include="AsignCounter.Designer.cs">
       <DependentUpon>AsignCounter.cs</DependentUpon>
     </Compile>
-    <Compile Include="AssignBusForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AssignBusForm.Designer.cs">
-      <DependentUpon>AssignBusForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="AssignRouteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,9 +161,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AsignCounter.resx">
       <DependentUpon>AsignCounter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AssignBusForm.resx">
-      <DependentUpon>AssignBusForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BusListForm.resx">
       <DependentUpon>BusListForm.cs</DependentUpon>
