@@ -21,9 +21,16 @@ namespace BusReservationSystem
 
         private void BtnPassenger_Click(object sender, EventArgs e)
         {
-            //Pessanger List Button Click
-            PessengerListForm pessengerList = new PessengerListForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
-            pessengerList.ShowDialog(this);
+            try
+            {
+                //Pessanger List Button Click
+                PessengerListForm pessengerList = new PessengerListForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
+                pessengerList.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         //Open About us dialog
@@ -47,9 +54,9 @@ namespace BusReservationSystem
             RefreshGrid();
             DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn()
             {
-                Name = "btnDel",
-                HeaderText = "Del Button",
-                Text = "Delete",
+                Name = "btnView",
+                HeaderText = "Routes",
+                Text = "View",
                 UseColumnTextForButtonValue = true
             };
             dataGridView1.Columns.Add(buttonColumn);
@@ -70,6 +77,7 @@ namespace BusReservationSystem
                 adminToolStripMenuItem.Enabled = true;
                 btnFindBus.Enabled = true;
             }
+
         }
 
         //Exit Application
@@ -124,17 +132,31 @@ namespace BusReservationSystem
 
         private void btnBookTicket_Click(object sender, EventArgs e)
         {
-            string s = dataGridView1.CurrentRow.Cells["no"].Value.ToString();
-            string a = dataGridView1.CurrentRow.Cells["avail_seat"].Value.ToString();
-            //Ticket Booking Form
-            TicketBookingForm tbf = new TicketBookingForm(s,a,this);
-            tbf.ShowDialog(this);
+            try
+            {
+                string s = dataGridView1.CurrentRow.Cells["no"].Value.ToString();
+                string a = dataGridView1.CurrentRow.Cells["avail_seat"].Value.ToString();
+                //Ticket Booking Form
+                TicketBookingForm tbf = new TicketBookingForm(s, a, this);
+                tbf.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnPrintTicket_Click(object sender, EventArgs e)
         {
-            PrintTicketForm ptf = new PrintTicketForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
-            ptf.ShowDialog(this);
+            try
+            {
+                PrintTicketForm ptf = new PrintTicketForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
+                ptf.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void RefreshGrid()
@@ -160,11 +182,9 @@ namespace BusReservationSystem
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dataGridView1.Columns["btnDel"].Index)
+            if (e.ColumnIndex == dataGridView1.Columns["btnView"].Index)
             {
                 Bus bus = new Bus();
-                if (MessageBox.Show("Are you sure about deleting this Bus?","Warning!",MessageBoxButtons.YesNo) == DialogResult.Yes)
-                    bus.DelBus(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
                 RefreshGrid();
             }
         }
@@ -182,8 +202,9 @@ namespace BusReservationSystem
 
         private void AddCounterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AsignCounterForm asignCounter = new AsignCounterForm();
+            AsignCounterForm asignCounter = new AsignCounterForm(dataGridView1.CurrentRow.Cells["no"].Value.ToString());
             asignCounter.ShowDialog(this);
         }
+
     }
 }

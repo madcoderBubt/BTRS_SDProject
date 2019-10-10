@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -45,20 +46,19 @@
             this.txtRegister_Name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.grpLogin = new System.Windows.Forms.GroupBox();
+            this.btnAbout = new System.Windows.Forms.PictureBox();
             this.btnLinkR = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtLog_Passsword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtLog_Phone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAbout = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.grpRegister.SuspendLayout();
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAbout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +75,16 @@
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.b54944f7322722034cfda55e601b4f8d_travel_bus_round_icon_by_vexels;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -262,6 +272,17 @@
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "LogIn";
             // 
+            // btnAbout
+            // 
+            this.btnAbout.Image = global::BusReservationSystem.Properties.Resources.attention_512;
+            this.btnAbout.Location = new System.Drawing.Point(259, 9);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(22, 23);
+            this.btnAbout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAbout.TabIndex = 4;
+            this.btnAbout.TabStop = false;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            // 
             // btnLinkR
             // 
             this.btnLinkR.AutoSize = true;
@@ -323,27 +344,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Phone No.";
             // 
-            // btnAbout
-            // 
-            this.btnAbout.Image = global::BusReservationSystem.Properties.Resources.attention_512;
-            this.btnAbout.Location = new System.Drawing.Point(259, 9);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(22, 23);
-            this.btnAbout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAbout.TabIndex = 4;
-            this.btnAbout.TabStop = false;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.b54944f7322722034cfda55e601b4f8d_travel_bus_round_icon_by_vexels;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // UserLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,13 +358,13 @@
             this.Load += new System.EventHandler(this.UserLog_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.grpRegister.ResumeLayout(false);
             this.grpRegister.PerformLayout();
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAbout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

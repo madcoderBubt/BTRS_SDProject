@@ -15,18 +15,25 @@ namespace BusReservationSystem.Classes
 
         public DataTable GetBuses()
         {
-            //Get List of Busses from Database & return as DataTable 
             DataTable dataTable = new DataTable();
-            using (SqlConnection con = new SqlConnection(conStr))
+            try
             {
-                SqlDataAdapter da = new SqlDataAdapter();
-                //Select All Busses based on counter
-                string sql = "select [Bus].*, [Bus_Counter].[date], [time] from [Bus] full outer join [Bus_Counter] on [Bus].[no] = [Bus_Counter].[bus_no] where [Bus_Counter].[counter_name] = @currentCounter";
-                SqlCommand cmd = new SqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@currentCounter", LogInfo.user_counter);
-                da.SelectCommand = cmd;                                
-                da.Fill(dataTable);
+                using (SqlConnection con = new SqlConnection(conStr))
+                {
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    //Select All Busses based on counter
+                    string sql = "select [Bus].*, [Bus_Counter].[date], [time] from [Bus] full outer join [Bus_Counter] on [Bus].[no] = [Bus_Counter].[bus_no] where [Bus_Counter].[counter_name] = @currentCounter";
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    cmd.Parameters.AddWithValue("@currentCounter", LogInfo.user_counter);
+                    da.SelectCommand = cmd;
+                    da.Fill(dataTable);
+                }
             }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+            //Get List of Busses from Database & return as DataTable 
             return dataTable;
         }
 
