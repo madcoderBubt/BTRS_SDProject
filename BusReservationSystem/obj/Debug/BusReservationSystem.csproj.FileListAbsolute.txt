@@ -39,7 +39,6 @@ C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\Bu
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.PessengerListForm.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.PrintTicketForm.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.Properties.Resources.resources
-C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.Register.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.TicketBookingForm.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.UserForm.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.UserLog.resources

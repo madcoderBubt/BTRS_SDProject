@@ -22,7 +22,14 @@ namespace BusReservationSystem.Classes
                 {
                     SqlDataAdapter da = new SqlDataAdapter();
                     //Select All Busses based on counter
-                    string sql = "select [Bus].*, [Bus_Counter].[date], [time] from [Bus] full outer join [Bus_Counter] on [Bus].[no] = [Bus_Counter].[bus_no] where [Bus_Counter].[counter_name] = @currentCounter";
+                    string sql = "select b.[no], t.[type], b.[total_capacity], b.[avail_seat], bc.[date], bc.[time]"
+                        + "from [Bus] b "
+                        + "join [Bus_Type] t "
+                        + "on t.[id] = b.[type] "
+                        + "full outer join [Bus_Counter] bc "
+                        + "on b.[no] = bc.[bus_no] "
+                        + "where bc.[counter_name] = @currentCounter";
+
                     SqlCommand cmd = new SqlCommand(sql, con);
                     cmd.Parameters.AddWithValue("@currentCounter", LogInfo.user_counter);
                     da.SelectCommand = cmd;
@@ -44,17 +51,26 @@ namespace BusReservationSystem.Classes
             DataTable dataTable = new DataTable();
             using (SqlConnection con = new SqlConnection(conStr))
             {
-                string sql = "select [Bus].*, [Bus_Counter].[date], [time] from [Bus] "
-                    + "full outer join [Bus_Counter] on [Bus].[no] = [Bus_Counter].[bus_no] where [Bus_Counter].[counter_name] = @currentCounter "
-                    + "and [Bus].[type] = @busType and [Bus_Counter].[date] = @busDate "
-                    + "and [Bus].[no] = any( select [Bus_Counter].[bus_no] from [Bus_Counter] where counter_name like @counterName)";
+                string sql = "select b.[no], t.[type], b.[total_capacity], b.[avail_seat], bc.[date], bc.[time] "
+                    + "from [Bus] b "
+                    + "join [Bus_Type] t "
+                    + "on t.[id] = b.[type] "
+                    + "full outer join [Bus_Counter] bc "
+                    + "on b.[no] = bc.[bus_no] "
+                    + "where bc.[counter_name] = @currentCounter "
+                    + "and b.[type] = @busType "
+                    + "and bc.[date] = @busDate "
+                    + "and bc.[bus_no] = "
+                    + "any( "
+                    + "select [Bus_Counter].[bus_no] "
+                    + "from [Bus_Counter] "
+                    + "where counter_name like @counterName )";
 
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@currentCounter", LogInfo.user_counter);
                 cmd.Parameters.AddWithValue("@counterName", destination + "%");
                 cmd.Parameters.AddWithValue("@busType", busType);
                 cmd.Parameters.AddWithValue("@busDate", busDate.ToShortDateString());
-                //System.Windows.Forms.MessageBox.Show(busDate.ToShortDateString());
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dataTable);
             }
@@ -155,6 +171,7 @@ namespace BusReservationSystem.Classes
                     + p.seat_length + ", '"
                     + p.counter + "', "
                     + p.GetPrice() + " )";
+
                 SqlCommand cmd = new SqlCommand(sql, sqlCon);
                 sqlCon.Open();
                 if (cmd.ExecuteNonQuery() > 0)

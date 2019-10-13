@@ -80,9 +80,25 @@ namespace BusReservationSystem
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            cmbCounter.Text = "Counter";
-            btnUpdate.Enabled = false;
-            btnAddUpdate.Enabled = true;
+            try
+            {
+                if (MessageBox.Show("Are you sure about cleaning this!","Warning!",MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    using (SqlConnection sqlCon = new SqlConnection(conStr))
+                    {
+                        string sql = "Delete from [Bus_Counter] where [bus_no] = @busNo";
+                        SqlCommand cmd = new SqlCommand(sql, sqlCon);
+                        cmd.Parameters.AddWithValue("@busNo", txtBusNo.Text);
+                        sqlCon.Open();
+                        if (cmd.ExecuteNonQuery() > 0)
+                        {
+                            RefreshGrid();
+                        }
+                    }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void BtnAddUpdate_Click(object sender, EventArgs e)
