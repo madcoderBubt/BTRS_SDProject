@@ -275,7 +275,7 @@
             // btnAbout
             // 
             this.btnAbout.Image = global::BusReservationSystem.Properties.Resources.attention_512;
-            this.btnAbout.Location = new System.Drawing.Point(259, 9);
+            this.btnAbout.Location = new System.Drawing.Point(257, 9);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(22, 23);
             this.btnAbout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -354,7 +354,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserLog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserLog";
+            this.Text = "User Log - BTRS";
             this.Load += new System.EventHandler(this.UserLog_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

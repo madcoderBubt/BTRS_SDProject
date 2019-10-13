@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtBusNo = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +47,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(578, 45);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Bus No.";
             // 
             // button1
             // 
@@ -74,15 +83,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(578, 241);
             this.dataGridView1.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bus No.";
-            // 
             // PessengerListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,7 +91,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "PessengerListForm";
-            this.Text = "PessengerListForm";
+            this.Text = "Passenger List - BTRS";
             this.Load += new System.EventHandler(this.PessengerListForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

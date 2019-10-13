@@ -51,7 +51,7 @@
             this.ClientSize = new System.Drawing.Size(580, 312);
             this.Controls.Add(this.dataGridView1);
             this.Name = "BusListForm";
-            this.Text = "BusListForm";
+            this.Text = "Bus List -BTRS";
             this.Load += new System.EventHandler(this.BusListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBusNo = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReset = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAddUpdate = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.cmbCounter = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -84,6 +84,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(244, 278);
             this.panel1.TabIndex = 2;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(95, 215);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(56, 31);
+            this.btnReset.TabIndex = 8;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.Button1_Click);
             // 
             // btnUpdate
             // 
@@ -182,16 +192,6 @@
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView1_RowHeaderMouseDoubleClick);
             // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(95, 215);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(56, 31);
-            this.btnReset.TabIndex = 8;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // AsignCounterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,7 +201,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "AsignCounterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AsignCounter";
+            this.Text = "Asign Counter - BTRS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AsignCounterForm_FormClosed);
             this.Load += new System.EventHandler(this.AsignCounterForm_Load);
             this.panel1.ResumeLayout(false);

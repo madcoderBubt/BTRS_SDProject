@@ -298,7 +298,7 @@
             this.MaximumSize = new System.Drawing.Size(360, 320);
             this.MinimumSize = new System.Drawing.Size(360, 320);
             this.Name = "CancelTicketForm";
-            this.Text = "CancelTicketForm";
+            this.Text = "Cancel Ticket - BTRS";
             this.Load += new System.EventHandler(this.CancelTicketForm_Load);
             this.grpPassengerInfo.ResumeLayout(false);
             this.grpPassengerInfo.PerformLayout();

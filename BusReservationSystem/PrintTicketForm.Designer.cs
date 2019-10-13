@@ -97,7 +97,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.panel1);
             this.Name = "PrintTicketForm";
-            this.Text = "PrintTicketForm";
+            this.Text = "Print Ticket - BTRS";
             this.Load += new System.EventHandler(this.PrintTicketForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -235,10 +235,10 @@
   <ItemGroup>
     <None Include="Resources\b54944f7322722034cfda55e601b4f8d-travel-bus-round-icon-by-vexels.png" />
     <Content Include="DB\BTRS-Db.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DB\BTRS-Db_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>BTRS-Db.mdf</DependentUpon>
     </Content>
     <Content Include="Resources\caki.jpg" />

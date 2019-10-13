@@ -212,7 +212,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(365, 303);
             this.Name = "TicketBookingForm";
-            this.Text = "TicketBookingForm";
+            this.Text = "Book Ticket - BTRS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TicketBookingForm_FormClosing);
             this.Load += new System.EventHandler(this.TicketBookingForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
