@@ -54,3 +54,5 @@ C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\Bu
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.AsignBusForm.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.AsignCounterForm.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.BusListForm.resources
+C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\bin\Debug\DB\BTRS-Db.mdf
+C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\bin\Debug\DB\BTRS-Db_log.ldf

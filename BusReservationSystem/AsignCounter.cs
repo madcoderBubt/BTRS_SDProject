@@ -87,7 +87,27 @@ namespace BusReservationSystem
 
         private void BtnAddUpdate_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(conStr))
+                {
+                    string sql = "Insert into [Bus_Counter] values('" +
+                        cmbCounter.SelectedValue + "', '" +
+                        txtBusNo.Text + "', '" +
+                        dtpDate.Value.Date + "', '" +
+                        dtpTime.Value.TimeOfDay + "')";
+                    SqlCommand cmd = new SqlCommand(sql, sqlCon);
+                    sqlCon.Open();
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        RefreshGrid();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
