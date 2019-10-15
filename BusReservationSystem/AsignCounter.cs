@@ -35,6 +35,7 @@ namespace BusReservationSystem
         private void AsignCounterForm_Load(object sender, EventArgs e)
         {
             txtBusNo.Text = _busNo;
+            dtpDate.Value = DateTime.Today;
 
             Account account = new Account();
             cmbCounter.DataSource = account.GetConters();

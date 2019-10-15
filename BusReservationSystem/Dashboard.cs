@@ -77,7 +77,7 @@ namespace BusReservationSystem
                 adminToolStripMenuItem.Enabled = true;
                 btnFindBus.Enabled = true;
             }
-
+            dtpBusTime.Value = DateTime.Today;
         }
 
         //Exit Application

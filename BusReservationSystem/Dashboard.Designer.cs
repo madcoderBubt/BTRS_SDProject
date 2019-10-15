@@ -38,7 +38,6 @@
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignBussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asignRouteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCounterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.txtCounter = new System.Windows.Forms.TextBox();
@@ -146,7 +145,6 @@
             // 
             this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asignBussToolStripMenuItem,
-            this.asignRouteToolStripMenuItem,
             this.addCounterToolStripMenuItem});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
@@ -156,23 +154,15 @@
             // 
             this.asignBussToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.asignBussToolStripMenuItem.Name = "asignBussToolStripMenuItem";
-            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.asignBussToolStripMenuItem.Text = "Asign Buss";
+            this.asignBussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.asignBussToolStripMenuItem.Text = "Assign Bus";
             this.asignBussToolStripMenuItem.Click += new System.EventHandler(this.AsignBussToolStripMenuItem_Click);
-            // 
-            // asignRouteToolStripMenuItem
-            // 
-            this.asignRouteToolStripMenuItem.Enabled = false;
-            this.asignRouteToolStripMenuItem.Name = "asignRouteToolStripMenuItem";
-            this.asignRouteToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.asignRouteToolStripMenuItem.Text = "Asign Route";
-            this.asignRouteToolStripMenuItem.Click += new System.EventHandler(this.AsignRouteToolStripMenuItem_Click);
             // 
             // addCounterToolStripMenuItem
             // 
             this.addCounterToolStripMenuItem.Name = "addCounterToolStripMenuItem";
-            this.addCounterToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.addCounterToolStripMenuItem.Text = "Add Counter";
+            this.addCounterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCounterToolStripMenuItem.Text = "Assign Counter";
             this.addCounterToolStripMenuItem.Click += new System.EventHandler(this.AddCounterToolStripMenuItem_Click);
             // 
             // button1
@@ -191,7 +181,6 @@
             this.txtCounter.Name = "txtCounter";
             this.txtCounter.Size = new System.Drawing.Size(131, 20);
             this.txtCounter.TabIndex = 6;
-            this.txtCounter.Text = "Counter Name";
             // 
             // panel2
             // 
@@ -423,7 +412,6 @@
         private System.Windows.Forms.Label lblCurrentUser;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignBussToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asignRouteToolStripMenuItem;
         private System.Windows.Forms.ComboBox cmbBusType;
         private System.Windows.Forms.DateTimePicker dtpBusTime;
         private System.Windows.Forms.Button btnReset;
