@@ -57,7 +57,7 @@ namespace BusReservationSystem
             {
                 Bus bus = new Bus();
                 bool s = false;
-                if (MessageBox.Show("$" + passenger.GetPrice().ToString(), "Price for U!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("৳" + passenger.GetPrice().ToString(), "Price for U!", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     s = bus.SetPassenger(passenger);
                 }

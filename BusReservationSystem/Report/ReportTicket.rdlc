@@ -483,7 +483,7 @@
                           <Source>Embedded</Source>
                           <Value>unnamed5</Value>
                           <Sizing>FitProportional</Sizing>
-                          <Top>0.30903in</Top>
+                          <Top>0.18403in</Top>
                           <Left>3.29292in</Left>
                           <Height>1.34375in</Height>
                           <Width>1.33333in</Width>
@@ -504,7 +504,7 @@
                                   <Value>=Fields!Price.Value</Value>
                                   <Style>
                                     <FontWeight>ExtraBold</FontWeight>
-                                    <Format>'$'0.00;('$'0.00)</Format>
+                                    <Format>'৳' 0.00;('৳' 0.00)</Format>
                                     <Color>DarkGreen</Color>
                                   </Style>
                                 </TextRun>
