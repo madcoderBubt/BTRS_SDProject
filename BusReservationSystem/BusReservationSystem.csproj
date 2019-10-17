@@ -241,10 +241,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>BTRS-Db.mdf</DependentUpon>
     </Content>
-    <Content Include="Resources\caki.jpg" />
-    <Content Include="Resources\ili.jpg" />
+    <None Include="Resources\chakib.jpg" />
+    <None Include="Resources\illin.jpg" />
+    <Content Include="Resources\bus.png" />
     <Content Include="Resources\MC-logo-c.png" />
-    <Content Include="Resources\smi.jpg" />
+    <None Include="Resources\smita rani %282%29.jpg" />
     <Content Include="Resources\sudha.jpg" />
     <None Include="Resources\MC-logo.png" />
   </ItemGroup>

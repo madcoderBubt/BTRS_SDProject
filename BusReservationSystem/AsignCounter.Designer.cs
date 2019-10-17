@@ -171,7 +171,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.b54944f7322722034cfda55e601b4f8d_travel_bus_round_icon_by_vexels;
+            this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.bus;
             this.pictureBox1.Location = new System.Drawing.Point(68, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);

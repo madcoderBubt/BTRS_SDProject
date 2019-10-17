@@ -43,7 +43,6 @@ C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\Bu
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.UserForm.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.UserLog.resources
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.csproj.GenerateResource.cache
-C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.csproj.CoreCompileInputs.cache
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.csproj.CopyComplete
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.exe
 C:\Users\Mad Coder\Documents\Visual Studio 2019\Projects\BusReservationSystem\BusReservationSystem\obj\Debug\BusReservationSystem.pdb

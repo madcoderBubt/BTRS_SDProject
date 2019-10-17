@@ -73,9 +73,9 @@ namespace BusReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap b54944f7322722034cfda55e601b4f8d_travel_bus_round_icon_by_vexels {
+        internal static System.Drawing.Bitmap bus {
             get {
-                object obj = ResourceManager.GetObject("b54944f7322722034cfda55e601b4f8d-travel-bus-round-icon-by-vexels", resourceCulture);
+                object obj = ResourceManager.GetObject("bus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace BusReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap caki {
+        internal static System.Drawing.Bitmap chakib {
             get {
-                object obj = ResourceManager.GetObject("caki", resourceCulture);
+                object obj = ResourceManager.GetObject("chakib", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace BusReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ili {
+        internal static System.Drawing.Bitmap illin {
             get {
-                object obj = ResourceManager.GetObject("ili", resourceCulture);
+                object obj = ResourceManager.GetObject("illin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,19 @@ namespace BusReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap smi {
+        internal static System.Drawing.Bitmap MC_logo_c {
             get {
-                object obj = ResourceManager.GetObject("smi", resourceCulture);
+                object obj = ResourceManager.GetObject("MC_logo_c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smita_rani {
+            get {
+                object obj = ResourceManager.GetObject("smita_rani", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
