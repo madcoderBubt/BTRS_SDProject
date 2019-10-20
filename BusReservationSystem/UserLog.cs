@@ -43,7 +43,8 @@ namespace BusReservationSystem
         {
             if (this.Width == 313)
             {
-                this.Width = 667;
+                //this.Width = 667;
+                timer2.Start();
                 foreach (Control c in grpRegister.Controls)
                 {
                     c.TabStop = true;
@@ -51,7 +52,8 @@ namespace BusReservationSystem
             }
             else
             {
-                this.Width = 313;
+                //this.Width = 313;
+                timer1.Start();
                 foreach (Control c in grpRegister.Controls)
                 {
                     c.TabStop = false;
@@ -137,6 +139,30 @@ namespace BusReservationSystem
             cmbRegister_Counter.DataSource = counters;
             cmbRegister_Counter.DisplayMember = "name";
             cmbRegister_Counter.ValueMember = "name";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (this.Width > 313)
+            {
+                this.Width -= 2;
+            }
+            else
+            {
+                timer1.Stop();
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (this.Width < 653)
+            {
+                this.Width += 2;
+            }
+            else
+            {
+                timer2.Stop();
+            }
         }
     }
 }
