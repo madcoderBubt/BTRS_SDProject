@@ -30,14 +30,16 @@ namespace BusReservationSystem
             {
                 foreach (Control item in grpPassengerInfo.Controls)
                 {
-                    item.Enabled = true;
+                    if(item is TextBox)
+                        item.Enabled = true;
                 }
             }
             else
             {
                 foreach (Control item in grpPassengerInfo.Controls)
                 {
-                    item.Enabled = false;
+                    if(item is TextBox)
+                        item.Enabled = false;
                 }
             }
         }
