@@ -243,8 +243,10 @@
     </Content>
     <None Include="Resources\chakib.jpg" />
     <None Include="Resources\illin.jpg" />
+    <None Include="Resources\Bus-PNG-Transparent.png" />
     <Content Include="Resources\bus.png" />
     <None Include="Resources\Bus_icon.ico" />
+    <None Include="Resources\bus_back.png" />
     <Content Include="Resources\MC-logo-c.png" />
     <None Include="Resources\smita rani %282%29.jpg" />
     <Content Include="Resources\sudha.jpg" />

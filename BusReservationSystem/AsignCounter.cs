@@ -43,7 +43,7 @@ namespace BusReservationSystem
             cmbCounter.ValueMember = "name";
             cmbCounter.Text = "Counter";
 
-            btnUpdate.Enabled = false;
+            //btnUpdate.Enabled = false;
             RefreshGrid();
         }
 
@@ -75,7 +75,7 @@ namespace BusReservationSystem
             cmbCounter.SelectedValue = dataGridView1.CurrentRow.Cells["counter_name"].Value;
             dtpDate.Value = DateTime.Parse(dataGridView1.CurrentRow.Cells["date"].Value.ToString());
             dtpTime.Value = DateTime.Parse(dataGridView1.CurrentRow.Cells["time"].Value.ToString());
-            btnUpdate.Enabled = true;
+            //btnUpdate.Enabled = true;
             btnAddUpdate.Enabled = false;
         }
 

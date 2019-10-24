@@ -148,6 +148,8 @@
             // 
             // grpRegister
             // 
+            this.grpRegister.BackgroundImage = global::BusReservationSystem.Properties.Resources.bus_back;
+            this.grpRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.grpRegister.Controls.Add(this.btnRegister);
             this.grpRegister.Controls.Add(this.cmbRegister_Role);
             this.grpRegister.Controls.Add(this.cmbRegister_Counter);
@@ -218,6 +220,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(17, 103);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 13);
@@ -227,6 +230,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(17, 79);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
@@ -236,6 +240,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(17, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 13);
@@ -253,6 +258,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(17, 31);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
@@ -261,6 +267,8 @@
             // 
             // grpLogin
             // 
+            this.grpLogin.BackgroundImage = global::BusReservationSystem.Properties.Resources.bus_back;
+            this.grpLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.grpLogin.Controls.Add(this.btnAbout);
             this.grpLogin.Controls.Add(this.btnLinkR);
             this.grpLogin.Controls.Add(this.btnLogin);
@@ -289,6 +297,7 @@
             // btnLinkR
             // 
             this.btnLinkR.AutoSize = true;
+            this.btnLinkR.BackColor = System.Drawing.Color.Transparent;
             this.btnLinkR.Location = new System.Drawing.Point(112, 171);
             this.btnLinkR.Name = "btnLinkR";
             this.btnLinkR.Size = new System.Drawing.Size(71, 13);
@@ -321,6 +330,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(14, 78);
             this.label2.Name = "label2";
@@ -340,6 +350,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 34);
             this.label1.Name = "label1";

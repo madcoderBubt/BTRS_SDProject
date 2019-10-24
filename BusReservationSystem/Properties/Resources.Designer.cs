@@ -83,6 +83,26 @@ namespace BusReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bus_back {
+            get {
+                object obj = ResourceManager.GetObject("bus_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bus_PNG_Transparent {
+            get {
+                object obj = ResourceManager.GetObject("Bus-PNG-Transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chakib {
             get {
                 object obj = ResourceManager.GetObject("chakib", resourceCulture);
