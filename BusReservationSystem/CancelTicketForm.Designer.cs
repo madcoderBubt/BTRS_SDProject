@@ -339,6 +339,10 @@
             this.Controls.Add(this.txtBusNo);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(509, 364);
+            this.MinimumSize = new System.Drawing.Size(509, 364);
             this.Name = "CancelTicketForm";
             this.Text = "Cancel Ticket - BTRS";
             this.Load += new System.EventHandler(this.CancelTicketForm_Load);

@@ -103,7 +103,7 @@ namespace BusReservationSystem
         {
             //Menu: Help > Contact Us
             //Opens HyperLink on default browser.
-            System.Diagnostics.Process.Start("https://madcoderbubt.github.io/MadCoderPersonal");
+            System.Diagnostics.Process.Start("https://github.com/madcoderBubt/BTRS_SDProject");
         }
 
         private void userInfoToolStripMenuItem_Click(object sender, EventArgs e)

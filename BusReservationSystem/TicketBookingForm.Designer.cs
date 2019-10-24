@@ -98,7 +98,6 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(213, 29);
             this.txtFullName.TabIndex = 1;
-            this.txtFullName.Text = "Mad coder";
             // 
             // label2
             // 
@@ -118,7 +117,6 @@
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(213, 29);
             this.txtPhoneNo.TabIndex = 2;
-            this.txtPhoneNo.Text = "+8801632740075";
             // 
             // label3
             // 
@@ -230,8 +228,8 @@
             this.Controls.Add(this.txtBusNo);
             this.Controls.Add(this.txtTicketNo);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "TicketBookingForm";
             this.Text = "Book Ticket - BTRS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TicketBookingForm_FormClosing);

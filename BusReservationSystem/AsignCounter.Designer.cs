@@ -200,7 +200,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(276, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(515, 402);
+            this.dataGridView1.Size = new System.Drawing.Size(408, 402);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView1_RowHeaderMouseDoubleClick);
             // 
@@ -208,9 +208,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 402);
+            this.ClientSize = new System.Drawing.Size(684, 402);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(850, 441);
+            this.MinimumSize = new System.Drawing.Size(700, 441);
             this.Name = "AsignCounterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Asign Counter - BTRS";
