@@ -30,9 +30,9 @@ namespace BusReservationSystem.Classes
             DateTime time2 = b.GetTime(bus_no, end_loc, null);
             hours = (time2 - time1).TotalHours;
             if (hours <= 1)
-                price = 1.30m * seat_length;
+                price = 75.50m * seat_length;
             else
-                price = 1.30m * seat_length + (decimal)((hours - 1) * 1) * seat_length;
+                price = 75.50m * seat_length + (decimal)((hours - 1) * 60) * seat_length;
             return price;
         }
     }

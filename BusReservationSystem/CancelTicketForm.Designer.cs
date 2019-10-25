@@ -118,35 +118,50 @@
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnReset.FlatAppearance.BorderSize = 2;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.Goldenrod;
             this.btnReset.Location = new System.Drawing.Point(125, 282);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 32);
+            this.btnReset.Size = new System.Drawing.Size(75, 46);
             this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.btnUpdate.Enabled = false;
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnUpdate.FlatAppearance.BorderSize = 2;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(311, 282);
+            this.btnUpdate.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnUpdate.Location = new System.Drawing.Point(290, 282);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(88, 32);
+            this.btnUpdate.Size = new System.Drawing.Size(88, 46);
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnDelete.FlatAppearance.BorderSize = 2;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(405, 282);
+            this.btnDelete.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnDelete.Location = new System.Drawing.Point(384, 282);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 32);
+            this.btnDelete.Size = new System.Drawing.Size(96, 46);
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // ckbEnable
@@ -155,7 +170,7 @@
             this.ckbEnable.BackColor = System.Drawing.Color.Transparent;
             this.ckbEnable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbEnable.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.ckbEnable.Location = new System.Drawing.Point(9, 288);
+            this.ckbEnable.Location = new System.Drawing.Point(9, 295);
             this.ckbEnable.Name = "ckbEnable";
             this.ckbEnable.Size = new System.Drawing.Size(110, 24);
             this.ckbEnable.TabIndex = 14;
@@ -309,13 +324,18 @@
             // 
             // btnGetData
             // 
+            this.btnGetData.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnGetData.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnGetData.FlatAppearance.BorderSize = 2;
+            this.btnGetData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGetData.ForeColor = System.Drawing.Color.Goldenrod;
             this.btnGetData.Location = new System.Drawing.Point(206, 282);
             this.btnGetData.Name = "btnGetData";
-            this.btnGetData.Size = new System.Drawing.Size(99, 32);
+            this.btnGetData.Size = new System.Drawing.Size(78, 46);
             this.btnGetData.TabIndex = 10;
             this.btnGetData.Text = "Get";
-            this.btnGetData.UseVisualStyleBackColor = true;
+            this.btnGetData.UseVisualStyleBackColor = false;
             this.btnGetData.Click += new System.EventHandler(this.BtnGetData_Click);
             // 
             // CancelTicketForm
@@ -325,7 +345,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = global::BusReservationSystem.Properties.Resources.bus_back;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(493, 325);
+            this.ClientSize = new System.Drawing.Size(493, 340);
             this.Controls.Add(this.grpPassengerInfo);
             this.Controls.Add(this.ckbEnable);
             this.Controls.Add(this.btnDelete);
@@ -341,7 +361,6 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(509, 364);
             this.MinimumSize = new System.Drawing.Size(509, 364);
             this.Name = "CancelTicketForm";
             this.Text = "Cancel Ticket - BTRS";

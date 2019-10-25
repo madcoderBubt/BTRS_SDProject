@@ -91,24 +91,32 @@
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnReset.FlatAppearance.BorderSize = 2;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Location = new System.Drawing.Point(28, 344);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(116, 44);
             this.btnReset.TabIndex = 8;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.Button1_Click);
             // 
             // btnAddUpdate
             // 
+            this.btnAddUpdate.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnAddUpdate.FlatAppearance.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnAddUpdate.FlatAppearance.BorderSize = 2;
+            this.btnAddUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddUpdate.Location = new System.Drawing.Point(150, 344);
             this.btnAddUpdate.Name = "btnAddUpdate";
             this.btnAddUpdate.Size = new System.Drawing.Size(112, 44);
             this.btnAddUpdate.TabIndex = 7;
             this.btnAddUpdate.Text = "Add";
-            this.btnAddUpdate.UseVisualStyleBackColor = true;
+            this.btnAddUpdate.UseVisualStyleBackColor = false;
             this.btnAddUpdate.Click += new System.EventHandler(this.BtnAddUpdate_Click);
             // 
             // label4

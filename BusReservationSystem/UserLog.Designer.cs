@@ -143,7 +143,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(655, 241);
+            this.panel2.Size = new System.Drawing.Size(655, 230);
             this.panel2.TabIndex = 1;
             // 
             // grpRegister
@@ -169,13 +169,15 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnRegister.Location = new System.Drawing.Point(20, 125);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(283, 40);
+            this.btnRegister.Size = new System.Drawing.Size(283, 43);
             this.btnRegister.TabIndex = 6;
             this.btnRegister.Text = "Register Now";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // cmbRegister_Role
@@ -308,13 +310,15 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnLogin.Location = new System.Drawing.Point(17, 125);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(242, 40);
+            this.btnLogin.Size = new System.Drawing.Size(242, 43);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "LogIn";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtLog_Passsword
@@ -372,7 +376,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 271);
+            this.ClientSize = new System.Drawing.Size(655, 260);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -18,7 +18,7 @@ namespace BusReservationSystem
             InitializeComponent();
             //Initial size of window
             this.Width = 313;
-            this.Height = 271;
+            this.Height = 260;
             foreach (Control c in grpRegister.Controls)
             {
                 c.TabStop = false;
@@ -145,7 +145,7 @@ namespace BusReservationSystem
         {
             if (this.Width > 313)
             {
-                this.Width -= 2;
+                this.Width -= 5;
             }
             else
             {
@@ -157,7 +157,7 @@ namespace BusReservationSystem
         {
             if (this.Width < 653)
             {
-                this.Width += 2;
+                this.Width += 5;
             }
             else
             {

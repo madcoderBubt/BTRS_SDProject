@@ -162,34 +162,44 @@
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnReset.FlatAppearance.BorderSize = 2;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.Goldenrod;
             this.btnReset.Location = new System.Drawing.Point(16, 367);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(136, 36);
             this.btnReset.TabIndex = 6;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // btnBookNow
             // 
+            this.btnBookNow.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnBookNow.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnBookNow.FlatAppearance.BorderSize = 2;
+            this.btnBookNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookNow.ForeColor = System.Drawing.Color.Goldenrod;
             this.btnBookNow.Location = new System.Drawing.Point(158, 367);
             this.btnBookNow.Name = "btnBookNow";
             this.btnBookNow.Size = new System.Drawing.Size(213, 36);
             this.btnBookNow.TabIndex = 5;
             this.btnBookNow.Text = "Book Now";
-            this.btnBookNow.UseVisualStyleBackColor = true;
+            this.btnBookNow.UseVisualStyleBackColor = false;
             this.btnBookNow.Click += new System.EventHandler(this.BtnBookNow_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.CadetBlue;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::BusReservationSystem.Properties.Resources.Bus_PNG_Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(104, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(177, 111);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -198,7 +208,7 @@
             this.lblAvailSeat.AutoSize = true;
             this.lblAvailSeat.BackColor = System.Drawing.Color.Transparent;
             this.lblAvailSeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAvailSeat.Location = new System.Drawing.Point(263, 286);
+            this.lblAvailSeat.Location = new System.Drawing.Point(263, 283);
             this.lblAvailSeat.Name = "lblAvailSeat";
             this.lblAvailSeat.Size = new System.Drawing.Size(32, 24);
             this.lblAvailSeat.TabIndex = 7;
